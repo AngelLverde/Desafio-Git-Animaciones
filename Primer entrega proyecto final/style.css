@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.cuerpo {
+    background-color: rgb(202, 202, 187);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.encabezado {
+    background-color: rgb(161, 41, 41);
+    color: white;
+    border: solid;
+
+}
+
+.titulo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.pie-pagina {
+    background-color: rgb(161, 41, 41);
+    color: white;
+    text-align: center;
+    border: solid 5px;
+}
+
+.imagen-logo {
+    position: static;
+    top: 0%;
+    width: 10%;
+    border: solid 2px white;
+    margin-top: 10px;
+    margin-left: 05px;
+
+
+}
+
+.logo-Whatsapp {
+    width: 5ch;
+    position: sticky;
+    left: 160ch;
+    top: 10%;
+    bottom: 20ch;
+
+}
+
+.primera-imagen {
+    position: relative;
+
+    width: 33%;
+    height: auto;
+    left: 4%;
+}
+
+.segunda-imagen {
+    position: relative;
+
+    width: 33%;
+    height: auto;
+    left: 4%;
+}
+
+.tercera-imagen {
+    position: relative;
+
+    width: 24%;
+    height: 1%;
+    left: 4%;
+}
+
+.menu-navegable li {
+    display: inline;
+    padding-left: 140px;
+}
+
+
+.contenido {
+    color: rgb(161, 41, 41);
+    text-align: center;
+}
+
+.desarrollos {
+
+    background-color: rgb(161, 41, 41);
+    text-align: center;
+    color: white;
+    border: solid rgb(161, 41, 41)
+}
+
+.desarrollos-direc {
+    text-decoration: underline white;
+    background-color: rgb(161, 41, 41);
+    text-align: center;
+    color: white;
+    border: solid rgb(161, 41, 41)
+}
+
+
+.imagen-render {
+    width: 800px;
+    height: auto;
+}
+
+.departamentos-nuevos {
+    text-align: justify;
+
+}
+
+.facebook {
+    width: 2%;
+    height: auto;
+    text-align: justify;
+}
+
+#mail {
+    border: solid;
+    border-left: 30%;
+    padding-right: 11%;
+    padding-left: 10px;
+
+    background-color: #cfc;
+}
+
+.comentarios-clientes {
+    display: inline;
+    width: 1em;
+    height: 1cm;
+    left: 1%;
+}
+
+.clientes {
+    text-align: center;
+    color: rgb(161, 41, 41)
+}
+
+.frase-principal {
+    text-align: center;
+    text-decoration: overline;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: rgb(163, 41, 41);
+    padding-top: 3ch;
+    padding-bottom: 3ch;
+    color: white;
+    border: solid white
+}
+
+.linea {
+    border-top: 3px solid gray;
+    height: 100%;
+    max-width: 100%;
+
+    margin: 20px auto 0 auto;
+}
+
+.dormitorios {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: rgb(161, 41, 41);
+}
+
+.dorm-1 {
+    position: relative;
+
+    width: 10%;
+    height: auto;
+    left: 15%;
+}
+
+.dorm-2 {
+    position: relative;
+
+    width: 10%;
+    height: auto;
+    left: 26%;
+}
+
+.dorm-3 {
+    position: relative;
+
+    width: 10%;
+    height: auto;
+    left: 38%;
+}
+
+.edificio-construccion {
+    position: relative;
+    width: 10%;
+    height: auto;
+    left: 48%;
+}
+
+.dorm-1-2-3 {
+    color: rgb(161, 41, 41);
+    font-size: larger;
+    padding-left: 12%;
+    letter-spacing: 5px;
+}
+
+.proyectos-comercializados {
+    text-align: center;
+    margin-top: 3%;
+}
+
+
+.frase-principal-vender {
+    font-size: large;
+    text-align: center;
+    background-image: url(imagenes/vende\ con\ nsotross.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 10ch;
+    padding-top: 5ch;
+    color: white
+}
+
+
+
+.formulario {
+    color: white;
+    font-size: large;
+    text-align: center;
+    background-color: rgb(163, 41, 41)
+}
+
+
+
+.p-box {
+    width: 300px;
+    margin: 35px 60px;
+    padding: 100px;
+    font-size: italic;
+    background-color: rgb(161, 41, 41);
+    color: white;
+    display: block;
+    text-align: center;
+    margin-right: 25px;
+}
+.cantidad-dormitorios {text-align: center;}
+
+.todos {
+    background-color: rgb(161, 41, 41);
+    color: white;
+    border: solid;
+}
+
+.dormitorio1 {
+    background-color: rgb(161, 41, 41);
+    color: white;
+    border: solid;
+}
+
+.dormitorios2 {
+    background-color: rgb(161, 41, 41);
+    color: white;
+    border: solid;
+}
+
+.dormitorios3 {
+    background-color: rgb(161, 41, 41);
+    color: white;
+    border: solid;
+}
+
+.otras-propiedades {
+    background-color: rgb(161, 41, 41);
+    color: white;
+    border: solid;
+}
+.depto-viamonte {position: relative;
+
+    width: 33%;
+    height: auto;
+    left: 25%;}
+    .depto-lima {position: relative;
+
+        width: 33%;
+        height: auto;
+        left: 6%;}
+
+        .calle-lima {border: solid white;
+            color: red;}
+
+        .h1 {text-align: center;}
+        .ubicacion {font-size: large;
+        background-color: brown;}
+
+        .u {background-color: rgb(161, 41, 41);}
+        .instagram-contactos { width: 2%;
+            height: auto;
+            text-align: justify; }
+
+
+            /* TRANSFORMACIONES Y ANIMACIONES*/
