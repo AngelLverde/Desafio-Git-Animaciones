@@ -3,9 +3,11 @@
     padding: 0;
 }
 .cuerpo {
-    background-color: rgb(202, 202, 187);
+    /* APLICANDO GRADIENTES*/
+    background-image: linear-gradient(to top, white, grey);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
+
 }
 
 .encabezado {
@@ -73,6 +75,9 @@
 .menu-navegable li {
     display: inline;
     padding-left: 140px;
+    transition: all 2;
+    
+
 }
 
 
@@ -144,8 +149,11 @@
     padding-top: 3ch;
     padding-bottom: 3ch;
     color: white;
-    border: solid white
+    border: solid white;
+    animation: changeColor 5s;
 }
+
+.animate__animated {color: white;}
 
 .linea {
     border-top: 3px solid gray;
@@ -295,3 +303,4 @@
 
 
             /* TRANSFORMACIONES Y ANIMACIONES*/
+            
