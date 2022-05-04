@@ -7,85 +7,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercurio-Inmobiliaria</title>
     <link rel="shortcut icon" href="imagenes/LOGO.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body class="cuerpo">
-    <img class="imagen-logo" src="imagenes/Logo.ico" alt="Logo-Mercurio-Inmobiliaria">
+    
     <header class="encabezado">
-
+        <img class="imagen-logo" src="imagenes/Logo.ico" alt="Logo-Mercurio-Inmobiliaria">
         <nav>
             <ul class="menu-navegable">
-                <b>
-                    <li>
-                        <a href="index.html">Home</a>
-                    <li>
-                        <a href="comprar.html">Comprar</a>
-                    <li>
-                        <a href="vender.html">Vender</a>
-                    <li>
-                        <a href="alquilar.html">Alquilar</a>
-                    <li>
-                        <a href="Contacto.html">Contacto</a>
-                    </li>
-                </b>
+
+                <li>
+                    <a href="index.html">Home</a>
+                <li>
+                    <a href="comprar.html">Comprar</a>
+                <li>
+                    <a href="vender.html">Vender</a>
+                <li>
+                    <a href="alquilar.html">Alquilar</a>
+                <li>
+                    <a href="Contacto.html">Contacto</a>
+                </li>
 
             </ul>
     </header>
 
     </nav>
+
     <main class="contenido">
         <section class>
-            <h1>
-                <u> Propiedades Destacadas En Venta</u>
+            <!-- APLICO ANIMACION EN H1-->
+            <h1 class="animate__animated animate__heartBeat"> Propiedades Destacadas En venta</h1>
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="..." class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Imagenes/Render tamaño.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                  </div>
+                </div>
+              </div>
+            
 
-            </h1>
-        
-            <div>
-                <img class="imagen-render" src="Imagenes/Render.jpg" alt="Render">
-            </div>
-           
         </section>
         <h2>
             Departamentos en la mejor zona de cba
         </h2>
         <img class="logo-Whatsapp" src="imagenes/whatsapp.png" alt="whatsapp">
         <div class="departamentos-nuevos">
-            
+
             <img class="primera-imagen" src="Imagenes/p-232871-171117033602-396362.jpg" alt="primera imagen">
             <img class="segunda-imagen" src="imagenes/p-982085-220322010136-197619.jpg" alt="segunda imagen">
             <img class="tercera-imagen" src="imagenes/p-982085-220322010136-445837.jpg" alt="trecera imagen">
-            
+
         </div>
-        
+
     </main>
     <div class="desarrollos">
-    <a class="desarrollos-direc" href ="file:///C:/Users/BANGHO/Desktop/Proyecto%20final/Primer%20entrega%20proyecto%20final/comprar.html">CONOCE NUESTROS DESARROLLOS</a>
+        <a class="desarrollos-direc"
+            href="file:///C:/Users/BANGHO/Desktop/Proyecto%20final/Primer%20entrega%20proyecto%20final/comprar.html">CONOCE
+            NUESTROS DESARROLLOS</a>
     </div>
     <section class="clientes">
         Comentarios de nuestros clientes
-        
+
 
         <div class="comentarios-clientes">
-            <img src="imagenes/Reseña.png" width="90" height="90"  alt="COMENTARIO-1">
+            <img src="imagenes/Reseña.png" width="90" height="90" alt="COMENTARIO-1">
             <img src="imagenes/Reseña.png" width="90" height="90" alt="COMENTARIO-3">
             <img src="imagenes/Reseña.png" width="90" height="90" alt="COMENTARIO-4">
             <img src="imagenes/Reseña.png" width="90" height="90" alt="COMENTARIO-5">
             <img src="imagenes/Reseña.png" width="90" height="90" alt="COMENTARIO-6">
         </div>
 
-    <footer class="pie-pagina">
-        <p>
-            
-                Recibir Newsletter - 
-                Tu mail   <aqui id="mail"></aqui>
-     
-                Seguinos - Me gusta <img class="facebook" src="imagenes/facebook.ico" alt="logo facebook"> Compartir - 
+        <footer class="pie-pagina">
+            <p>
+
+                Recibir Newsletter -
+                Tu mail <aqui id="mail"></aqui>
+
+                Seguinos - Me gusta <img class="facebook" src="imagenes/facebook.ico" alt="logo facebook"> Compartir -
                 Telefonos (351-11111111111)
-            
-        </p>
-    
-    </footer>
+
+            </p>
+
+        </footer>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 
 </html>
