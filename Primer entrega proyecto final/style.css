@@ -1,19 +1,32 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+/* BODY*/
 .cuerpo {
-    background-color: rgb(202, 202, 187);
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,0.5438550420168067) 0%, rgba(43,63,143,0.21332282913165268) 54%, rgba(0,212,255,0) 100%);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
 }
-
+/*HEADER*/
 .encabezado {
     background-color: rgb(161, 41, 41);
     color: white;
     border: solid;
+    padding: 5px;
+    text-align: center;
 
 }
+
+h1 {background-color: gray;
+    color: white;}
+
+.carousel { width: 80%;
+margin: auto;}
+
+h2 {color: white;}
 
 .titulo {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -32,7 +45,7 @@
     top: 0%;
     width: 10%;
     border: solid 2px white;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-left: 05px;
 
 
@@ -46,7 +59,11 @@
     bottom: 20ch;
 
 }
-/*imagenes*/
+/*IMAGENES*/
+.departamentos-nuevos {
+    display: flex;
+    
+ }
 
 .primera-imagen {
     position: relative;
@@ -80,7 +97,9 @@
     background-color: rgb(161, 41, 41)
 }
 .menu-navegable li a {text-decoration: none;
-color: white; }
+color: white;
+text-transform: uppercase;
+text-shadow: 2px 2px 2px black; }
 .menu-navegable li a:hover{ background-color: gray;}
 
 
@@ -111,10 +130,7 @@ color: white; }
     height: auto;
 }
 
-.departamentos-nuevos {
-    text-align: justify;
 
-}
 
 .facebook {
     width: 2%;
@@ -132,6 +148,8 @@ color: white; }
 }
 
 .comentarios-clientes {
+    display: flex;
+    text-align: center;
     display: inline;
     width: 1em;
     height: 1cm;
@@ -139,6 +157,7 @@ color: white; }
 }
 
 .clientes {
+    display: flex; 
     text-align: center;
     color: rgb(161, 41, 41)
 }
@@ -231,6 +250,7 @@ color: white; }
     text-align: center;
     background-color: rgb(163, 41, 41)
 }
+.formulario-contacto {padding: 25px;}
 
 
 
