@@ -230,6 +230,7 @@ text-shadow: 2px 2px 2px black; }
     margin-top: 3%;
 }
 
+.frase-principal { text-align: center;}
 
 .frase-principal-vender {
     font-size: large;
@@ -237,8 +238,8 @@ text-shadow: 2px 2px 2px black; }
     background-image: url(imagenes/vende\ con\ nsotross.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
-    margin-bottom: 10ch;
-    padding-top: 5ch;
+    margin-bottom: 5px;
+    padding-top: 5px;
     color: white
 }
 
