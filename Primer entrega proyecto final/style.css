@@ -1,15 +1,17 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 /* BODY*/
 .cuerpo {
-    background: rgb(2,0,36);
-    background: radial-gradient(circle, rgba(2,0,36,0.5438550420168067) 0%, rgba(43,63,143,0.21332282913165268) 54%, rgba(0,212,255,0) 100%);
+    background: rgb(2, 0, 36);
+    background: radial-gradient(circle, rgba(2, 0, 36, 0.5438550420168067) 0%, rgba(43, 63, 143, 0.21332282913165268) 54%, rgba(0, 212, 255, 0) 100%);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
 }
+
 /*HEADER*/
 .encabezado {
     background-color: rgb(161, 41, 41);
@@ -20,13 +22,21 @@
 
 }
 
-h1 {background-color: gray;
-    color: white;}
+h1 {
+    background-color: gray;
+    color: white;
+    margin-top: 15px
+}
 
-.carousel { width: 80%;
-margin: auto;}
+.carousel {
+    width: 80%;
+    margin: auto;
+}
 
-h2 {color: white;}
+h2 {
+    color: white;
+    margin-top: 30px;
+}
 
 .titulo {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -37,6 +47,7 @@ h2 {color: white;}
     color: white;
     text-align: center;
     border: solid 5px;
+    padding: 50px;
 }
 
 .imagen-logo {
@@ -50,6 +61,7 @@ h2 {color: white;}
 
 
 }
+
 /* LOGO WHATSAPP*/
 .logo-Whatsapp {
     width: 5ch;
@@ -59,11 +71,14 @@ h2 {color: white;}
     bottom: 20ch;
 
 }
+
 /*IMAGENES*/
 .departamentos-nuevos {
     display: flex;
-    
- }
+    margin-bottom: 30px;
+
+
+}
 
 .primera-imagen {
     position: relative;
@@ -96,11 +111,17 @@ h2 {color: white;}
     text-align: center;
     background-color: rgb(161, 41, 41)
 }
-.menu-navegable li a {text-decoration: none;
-color: white;
-text-transform: uppercase;
-text-shadow: 2px 2px 2px black; }
-.menu-navegable li a:hover{ background-color: gray;}
+
+.menu-navegable li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px black;
+}
+
+.menu-navegable li a:hover {
+    background-color: gray;
+}
 
 
 .contenido {
@@ -111,7 +132,12 @@ text-shadow: 2px 2px 2px black; }
 .desarrollos {
 
     background-color: rgb(161, 41, 41);
-    text-align: center;
+    width: 50%;
+    display: flex;
+    margin: auto;
+    margin-bottom: 50px;
+    justify-content: center;
+
     color: white;
     border: solid rgb(161, 41, 41)
 }
@@ -147,28 +173,35 @@ text-shadow: 2px 2px 2px black; }
     background-color: #cfc;
 }
 
-.comentarios-clientes {
-    display: flex;
-    text-align: center;
-    display: inline;
-    width: 1em;
-    height: 1cm;
-    left: 1%;
-}
+
 
 .clientes {
-    display: flex; 
-    text-align: center;
-    color: rgb(161, 41, 41)
+    display: flex;
+    border: solid 4px rgb(201, 198, 198);
+    color: rgb(161, 41, 41);
+    padding-top: 45px;
+    padding-bottom: 25px;
+    margin-bottom: 50px;
+    justify-content: space-evenly
 }
+
+.parrafo-comentarios {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: underline;
+    font-size: larger;
+}
+
 
 .frase-principal {
     display: flex;
+    justify-content: center;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     color: white;
-   
+
 
 }
 
@@ -219,6 +252,8 @@ text-shadow: 2px 2px 2px black; }
 }
 
 .dorm-1-2-3 {
+    display: flex;
+    padding-bottom: 25px;
     color: rgb(161, 41, 41);
     font-size: larger;
     padding-left: 12%;
@@ -230,7 +265,9 @@ text-shadow: 2px 2px 2px black; }
     margin-top: 3%;
 }
 
-.frase-principal { text-align: center;}
+.frase-principal {
+    text-align: center;
+}
 
 .frase-principal-vender {
     font-size: large;
@@ -251,7 +288,10 @@ text-shadow: 2px 2px 2px black; }
     text-align: center;
     background-color: rgb(163, 41, 41)
 }
-.formulario-contacto {padding: 25px;}
+
+.formulario-contacto {
+    padding: 25px;
+}
 
 
 
@@ -266,7 +306,10 @@ text-shadow: 2px 2px 2px black; }
     text-align: center;
     margin-right: 25px;
 }
-.cantidad-dormitorios {text-align: center;}
+
+.cantidad-dormitorios {
+    text-align: center;
+}
 
 .todos {
     background-color: rgb(161, 41, 41);
@@ -297,28 +340,47 @@ text-shadow: 2px 2px 2px black; }
     color: white;
     border: solid;
 }
-.depto-viamonte {position: relative;
+
+.depto-viamonte {
+    position: relative;
 
     width: 33%;
     height: auto;
-    left: 25%;}
-    .depto-lima {position: relative;
+    left: 25%;
+}
 
-        width: 33%;
-        height: auto;
-        left: 6%;}
+.depto-lima {
+    position: relative;
 
-        .calle-lima {border: solid white;
-            color: red;}
+    width: 33%;
+    height: auto;
+    left: 6%;
+}
 
-        .h1 {text-align: center;}
-        .ubicacion {font-size: large;
-        background-color: brown;}
+.calle-lima {
+    border: solid white;
+    color: red;
+}
 
-        .u {background-color: rgb(161, 41, 41);}
-        .instagram-contactos { width: 2%;
-            height: auto;
-            text-align: justify; }
+.h1 {
+    text-align: center;
+}
+
+.ubicacion {
+    font-size: large;
+    background-color: brown;
+}
+
+.u {
+    background-color: rgb(161, 41, 41);
+}
+
+.instagram-contactos {
+    width: 2%;
+    height: auto;
+    text-align: justify;
+}
 
 
-            /* TRANSFORMACIONES Y ANIMACIONES*/
+
+/* MEDIA QUERIES*/
