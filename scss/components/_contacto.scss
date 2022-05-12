@@ -1,0 +1,104 @@
+@import "../base/variables";
+
+
+
+/* HEADER*/
+.cuerpo {
+    .encabezado {
+        background-color: $bg-color-general;
+        color: white;
+        border: solid;
+        padding: 5px;
+        text-align: center;
+
+        .nav {
+            .imagen-logo {
+                display: flex;
+                position: static;
+                top: 0%;
+                width: 10%;
+                border: solid 2px white;
+                margin-top: 5px;
+                margin-left: 05px;
+            }
+
+            .menu-navegable {
+                display: flex;
+                list-style: none;
+                justify-content: space-evenly;
+                text-align: center;
+                background-color: $bg-color-general;
+
+                .li {
+                    text-decoration: none;
+                    color: white;
+                    text-transform: uppercase;
+                    text-shadow: 2px 2px 2px black;
+
+                    .a {
+                        &:hover {
+                            background-color: gray;
+                        }
+
+                    }
+
+                }
+
+            }
+        }
+    }
+}
+
+/* TERMINA - HEADER*/
+
+/* INICIA MAIN*/
+.main {
+    .h-1 {
+        .h1 {
+            background-color: gray;
+            color: $color-texto;
+            margin-top: 15px;
+
+            .div {
+                .div {
+                    .formulario {
+                        font-size: large;
+                        text-align: $texto-alineado;
+                        background-color: rgb(163, 41, 41)
+                    }
+                }
+            }
+
+        }
+
+    }
+
+
+}
+
+.logo-contacto {
+    width: 5ch;
+    position: sticky;
+    left: 160ch;
+    top: 10%;
+    bottom: 20ch;
+
+}
+
+/* FOOTER*/
+.pie-pagina {
+
+    background-color: $bg-color-general;
+    color: $color-texto;
+    border: $border;
+    padding: 50px;
+    
+
+    .facebook {
+        width: 2%;
+        height: auto;
+
+    }
+
+
+}

@@ -1,0 +1,77 @@
+/* nesting o anidamineto*/
+/* GENERALES*/
+/* COMPONENTES*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*VARIABLES*/
+/* HEADER*/
+.cuerpo .encabezado {
+  background-color: rgb(161, 41, 41);
+  color: white;
+  border: solid;
+  padding: 5px;
+  text-align: center;
+}
+.cuerpo .encabezado .nav .imagen-logo {
+  display: flex;
+  position: static;
+  top: 0%;
+  width: 10%;
+  border: solid 2px white;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.cuerpo .encabezado .nav .menu-navegable {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  text-align: center;
+  background-color: rgb(161, 41, 41);
+}
+.cuerpo .encabezado .nav .menu-navegable .li {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px black;
+}
+.cuerpo .encabezado .nav .menu-navegable .li .a:hover {
+  background-color: gray;
+}
+
+/* TERMINA - HEADER*/
+/* INICIA MAIN*/
+.main .h-1 .h1 {
+  background-color: gray;
+  color: white;
+  margin-top: 15px;
+}
+.main .h-1 .h1 .div .div .formulario {
+  font-size: large;
+  text-align: center;
+  background-color: rgb(163, 41, 41);
+}
+
+.logo-contacto {
+  width: 5ch;
+  position: sticky;
+  left: 160ch;
+  top: 10%;
+  bottom: 20ch;
+}
+
+/* FOOTER*/
+.pie-pagina {
+  background-color: rgb(161, 41, 41);
+  color: white;
+  border: 2px solid 3px;
+  padding: 50px;
+}
+.pie-pagina .facebook {
+  width: 2%;
+  height: auto;
+}
+
+/*# sourceMappingURL=style.css.map */
