@@ -1,21 +1,32 @@
 /* nesting o anidamineto*/
 /* GENERALES*/
 /* COMPONENTES*/
+/*VARIABLES*/
 * {
   margin: 0;
   padding: 0;
 }
 
 /*VARIABLES*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.cuerpo .encabezado {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
 /* HEADER*/
 .cuerpo .encabezado {
   background-color: rgb(161, 41, 41);
   color: white;
-  border: solid;
   padding: 5px;
-  text-align: center;
+  list-style: none;
 }
-.cuerpo .encabezado .nav .imagen-logo {
+.cuerpo .encabezado .imagen-logo {
   display: flex;
   position: static;
   top: 0%;
@@ -63,15 +74,23 @@
 }
 
 /* FOOTER*/
+/* MAPAS*/
 .pie-pagina {
   background-color: rgb(161, 41, 41);
+  text-align: center;
   color: white;
-  border: 2px solid 3px;
+  border: solid 5px;
   padding: 50px;
 }
 .pie-pagina .facebook {
   width: 2%;
   height: auto;
+}
+
+.cuerpo .encabezado {
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */

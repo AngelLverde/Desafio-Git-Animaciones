@@ -1,26 +1,34 @@
 @import "../base/variables";
+@import "../base/estilos-generales";
+@import "../base/mapas";
+@import "../base/extends";
+@import "../base/mixin";
+
 
 
 
 /* HEADER*/
 .cuerpo {
+
     .encabezado {
         background-color: $bg-color-general;
         color: white;
-        border: solid;
         padding: 5px;
-        text-align: center;
+        list-style: none;
+        @extend %flex;
+       
+
+        .imagen-logo {
+            @include flex (flex);
+            position: static;
+            top: 0%;
+            width: 10%;
+            border: solid 2px white;
+            margin-top: 5px;
+            margin-left: 05px;
+        }
 
         .nav {
-            .imagen-logo {
-                display: flex;
-                position: static;
-                top: 0%;
-                width: 10%;
-                border: solid 2px white;
-                margin-top: 5px;
-                margin-left: 05px;
-            }
 
             .menu-navegable {
                 display: flex;
@@ -86,13 +94,19 @@
 }
 
 /* FOOTER*/
+
+/* MAPAS*/
 .pie-pagina {
 
-    background-color: $bg-color-general;
-    color: $color-texto;
-    border: $border;
+    background-color: map-get($footer, bg-footer);
+    text-align: map-get($footer, texto-alineado);
+    color: map-get($footer, color-texto);
+    border: solid 5px;
     padding: 50px;
-    
+
+
+
+
 
     .facebook {
         width: 2%;

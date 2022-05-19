@@ -3,7 +3,10 @@
 /* GENERALES*/
 
 /* COMPONENTES*/ 
-@import "../scss/base/estilos-generales";
-
-   @import "../scss/components/contacto";
+@import "base/variables";
+@import "base/estilos-generales";
+@import "components/contacto";
+@import "base/mapas";
+@import "base/extends"; 
+@import "base/mixin";
 
