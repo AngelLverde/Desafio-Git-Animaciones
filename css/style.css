@@ -5,12 +5,32 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+/*MEDIAS - QUERIES*/
+@media screen and (max-width: 640px) {
+  .cuerpo {
+    width: 100%;
+  }
+}
 /*VARIABLES*/
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+/*MEDIAS - QUERIES*/
+@media screen and (max-width: 640px) {
+  .cuerpo {
+    width: 100%;
+  }
+}
+.parrafo-comentarios, .tarjeta, .frase-principal, .redes, .imagen-contacto, .section h1 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 
 /* HEADER*/
@@ -21,10 +41,12 @@
   color: white;
 }
 .cuerpo .encabezado {
-  background-color: rgb(161, 41, 41);
   color: white;
+  border: solid;
   padding: 5px;
   text-align: center;
+  width: auto;
+  height: auto;
 }
 .cuerpo .encabezado .imagen-logo {
   display: flex;
@@ -60,10 +82,7 @@
   display: flex;
 }
 .section h1 {
-  display: flex;
   margin: auto;
-  justify-content: center;
-  text-align: center;
   font-family: "Times New Roman", Times, serif;
 }
 .section .logo-Whatsapp {
@@ -80,11 +99,6 @@ h1 {
   color: white;
   margin-top: 15px;
   text-align: center;
-  justify-content: center;
-}
-
-.imagen-contacto {
-  display: flex;
   justify-content: center;
 }
 
@@ -116,11 +130,6 @@ h1 {
   justify-content: center;
   padding-top: 25px;
   padding-bottom: 5px;
-}
-
-.redes {
-  display: flex;
-  justify-content: center;
 }
 
 .facebook-contactos {
@@ -168,10 +177,29 @@ h1 {
   height: auto;
 }
 
+.parrafo-comentarios, .tarjeta, .frase-principal, .section h1, .imagen-contacto, .redes {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
 /*VARIABLES*/
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+/*MEDIAS - QUERIES*/
+@media screen and (max-width: 640px) {
+  .cuerpo {
+    width: 100%;
+  }
+}
+.parrafo-comentarios, .tarjeta, .frase-principal, .section h1, .imagen-contacto, .redes {
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 
 /*VENDER*/
@@ -182,11 +210,12 @@ h1 {
   color: white;
 }
 .cuerpo .encabezado {
-  background-color: rgb(161, 41, 41);
   color: white;
   border: solid;
   padding: 5px;
   text-align: center;
+  width: auto;
+  height: auto;
 }
 .cuerpo .imagen-logo {
   display: flex;
@@ -260,6 +289,19 @@ h1 {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+/*MEDIAS - QUERIES*/
+@media screen and (max-width: 640px) {
+  .cuerpo {
+    width: 100%;
+  }
+}
+.parrafo-comentarios, .tarjeta, .frase-principal, .section h1, .imagen-contacto, .redes {
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 
 .cuerpo {
@@ -269,11 +311,12 @@ h1 {
   color: white;
 }
 .cuerpo .encabezado {
-  background-color: rgb(161, 41, 41);
   color: white;
   border: solid;
   padding: 5px;
   text-align: center;
+  width: auto;
+  height: auto;
 }
 .cuerpo .imagen-logo {
   display: flex;
@@ -310,20 +353,15 @@ h1 {
 }
 
 .frase-principal {
-  display: flex;
   margin-bottom: 20px;
-  justify-content: center;
-  text-align: center;
   font-family: "Times New Roman", Times, serif;
   font-size: 30px;
   color: white;
 }
 
 .tarjeta {
-  display: flex;
   background: radial-gradient(circle, rgba(2, 0, 36, 0.543855042) 0%, rgba(43, 63, 143, 0.2133228291) 54%, rgba(0, 212, 255, 0) 100%);
   color: rgb(20, 20, 20);
-  justify-content: center;
   font-size: x-large;
   padding: 80px;
   margin-bottom: 30px;
@@ -410,6 +448,19 @@ h1 {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+/*MEDIAS - QUERIES*/
+@media screen and (max-width: 640px) {
+  .cuerpo {
+    width: 100%;
+  }
+}
+.parrafo-comentarios, .section h1, .imagen-contacto, .redes, .frase-principal, .tarjeta {
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 
 .cuerpo {
@@ -419,11 +470,12 @@ h1 {
   color: white;
 }
 .cuerpo .encabezado {
-  background-color: rgb(161, 41, 41);
   color: white;
   border: solid;
   padding: 5px;
   text-align: center;
+  width: auto;
+  height: auto;
 }
 .cuerpo .imagen-logo {
   display: flex;
@@ -452,9 +504,6 @@ h1 {
 }
 
 .frase-principal {
-  display: flex;
-  justify-content: center;
-  text-align: center;
   font-family: "Times New Roman", Times, serif;
   font-size: 30px;
   color: white;
@@ -539,6 +588,19 @@ h1 {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+/*MEDIAS - QUERIES*/
+@media screen and (max-width: 640px) {
+  .cuerpo {
+    width: 100%;
+  }
+}
+.parrafo-comentarios, .section h1, .imagen-contacto, .redes, .frase-principal, .tarjeta {
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 
 .cuerpo {
@@ -589,7 +651,7 @@ h1 {
   justify-content: center;
   margin: auto;
 }
-.contenido .h1 {
+.contenido h1 {
   background-color: gray;
   color: white;
   margin-top: 50px;
@@ -656,9 +718,6 @@ h1 {
 }
 
 .parrafo-comentarios {
-  display: flex;
-  justify-content: center;
-  text-align: center;
   text-decoration: underline;
   font-size: larger;
   color: black;
@@ -672,6 +731,14 @@ h1 {
   padding-bottom: 25px;
   margin-bottom: 50px;
   justify-content: space-evenly;
+}
+
+.pie-pagina {
+  background-color: rgb(161, 41, 41);
+  color: white;
+  text-align: center;
+  border: solid 5px;
+  padding: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,7 +1,18 @@
-$footer:(
+$footer: (
     bg-footer: rgb(161, 41, 41),
     texto-alineado: center,
-    color-texto: white, 
+    color-texto: white,
     border: solid 5px,
     padding: 50px,
-); 
+);
+
+$header: (
+    background-color: $bg-color-general,
+    color: $color-texto,
+    border: solid,
+    padding: 5px,
+    text-align: $texto-alineado,
+    width: auto,
+    height: auto,
+
+    )

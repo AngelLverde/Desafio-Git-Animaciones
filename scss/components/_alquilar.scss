@@ -12,11 +12,13 @@
     color: $color-texto;
   
     .encabezado {
-      background-color: $bg-color-general;
-      color:$color-texto;
+      background-color:map-get($header, $bg-color-general);
+      color: $color-texto;
       border: solid;
       padding: 5px;
-      text-align: $texto-alineado
+      text-align: $texto-alineado;
+      width: auto;
+      height: auto;
   
     }
   
@@ -41,7 +43,7 @@
   
     .menu-navegable li a {
       text-decoration: none;
-      color: white;
+      color: $color-texto;
       text-transform: uppercase;
       text-shadow: 2px 2px 2px black;
     }
@@ -52,12 +54,10 @@
   }
 
   .frase-principal {
-    display: flex;
-    justify-content: center;
-    text-align: center;
+    @extend %flex;
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
-    color: white;
+    color: $color-texto;
     padding-bottom: 25px;
     padding-top: 25px;
     .h1 {
@@ -82,31 +82,31 @@
     color: black;
 
   .todos {
-    background-color: rgb(161, 41, 41);
-    color: white;
+    background-color: $bg-color-general;
+    color: $color-texto;
     border: solid; }
 
     .dormitorio1 
     {
-      background-color: rgb(161, 41, 41);
-    color: white;
+      background-color: $bg-color-general;
+    color: $color-texto;
     border: solid;
     }
     .dormitorios2 {
-      background-color: rgb(161, 41, 41);
-      color: white;
+      background-color: $bg-color-general;
+      color: $color-texto;
       border: solid;
   }
   
   .dormitorios3 {
-      background-color: rgb(161, 41, 41);
-      color: white;
+      background-color: $bg-color-general;
+      color: $color-texto;
       border: solid;
   }
   
   .otras-propiedades {
-      background-color: rgb(161, 41, 41);
-      color: white;
+      background-color: $bg-color-general;
+      color: $color-texto;
       border: solid;
   }
   }
@@ -135,9 +135,9 @@
 }
 
 .pie-pagina {
-  background-color: rgb(161, 41, 41);
-  color: white;
-  text-align: center;
+  background-color: $bg-color-general;
+  color: $color-texto;
+  text-align:$texto-alineado;
   border: solid 5px;
   padding: 50px;
 }

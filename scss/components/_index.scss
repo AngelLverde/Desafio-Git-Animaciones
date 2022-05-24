@@ -38,13 +38,13 @@
         display: flex;
         list-style: none;
         justify-content: space-evenly;
-        text-align: center;
+        text-align: $texto-alineado;
         background-color: $bg-color-general;
     }
 
     .menu-navegable li a {
         text-decoration: none;
-        color: white;
+        color: $color-texto;
         text-transform: uppercase;
         text-shadow: 2px 2px 2px black;
     }
@@ -56,12 +56,13 @@
 
 /* INICIA MAIN*/
 .contenido {
+    
     color: rgb(161, 41, 41);
     text-align: center;
     justify-content: center;
     margin: auto;
 
-    .h1 {
+    h1 {
         background-color: gray;
         color: white;
         margin-top: 50px;
@@ -76,13 +77,13 @@
     }
 
     h2 {
-        color: white;
+        color: $color-texto;
         margin-top: 40px;
         font-family: 'Times New Roman', Times, serif;
         justify-content: center;
         font-size: 40px;
     }
-    
+
 
     .logo-Whatsapp {
         width: 5ch;
@@ -150,9 +151,7 @@
 }
 
 .parrafo-comentarios {
-    display: flex;
-    justify-content: center;
-    text-align: center;
+    @extend %flex;
     text-decoration: underline;
     font-size: larger;
     color: black;
@@ -162,10 +161,18 @@
 .clientes {
     display: flex;
     border: solid 4px rgb(201, 198, 198);
-    color: rgb(161, 41, 41);
+    color: $bg-color-general;
     padding-top: 45px;
     padding-bottom: 25px;
     margin-bottom: 50px;
     justify-content: space-evenly;
 
+}
+
+.pie-pagina {
+    background-color: $bg-color-general;
+    color: $color-texto;
+    text-align: center;
+    border: solid 5px;
+    padding: 50px;
 }
