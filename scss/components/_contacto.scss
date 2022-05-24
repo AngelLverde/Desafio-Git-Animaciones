@@ -9,14 +9,17 @@
 
 /* HEADER*/
 .cuerpo {
+    display: grid;
+    background: radial-gradient(circle, rgba(2, 0, 36, 0.5438550420168067) 0%, rgba(43, 63, 143, 0.21332282913165268) 54%, rgba(0, 212, 255, 0) 100%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
 
     .encabezado {
         background-color: $bg-color-general;
-        color: white;
+        color: $color-texto;
         padding: 5px;
-        list-style: none;
-        @extend %flex;
-       
+        text-align: $texto-alineado;
+
 
         .imagen-logo {
             @include flex (flex);
@@ -37,13 +40,13 @@
                 text-align: center;
                 background-color: $bg-color-general;
 
-                .li {
+                .menu-navegable li a {
                     text-decoration: none;
                     color: white;
                     text-transform: uppercase;
                     text-shadow: 2px 2px 2px black;
 
-                    .a {
+                    .menu-navegable li a {
                         &:hover {
                             background-color: gray;
                         }
@@ -59,30 +62,113 @@
 
 /* TERMINA - HEADER*/
 
-/* INICIA MAIN*/
-.main {
-    .h-1 {
-        .h1 {
-            background-color: gray;
-            color: $color-texto;
-            margin-top: 15px;
+/* INICIA - SECTION */
+.section {
+    justify-content: center;
+    margin: auto;
+    display: flex;
 
-            .div {
-                .div {
-                    .formulario {
-                        font-size: large;
-                        text-align: $texto-alineado;
-                        background-color: rgb(163, 41, 41)
-                    }
-                }
-            }
-
-        }
-
+    h1 {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
     }
+
+    .logo-Whatsapp {
+        width: 5ch;
+        position: sticky;
+        left: 160ch;
+        top: 10%;
+        bottom: 20ch;
+    }
+
+}
+
+/* INICIA MAIN*/
+h1 {
+    background-color: gray;
+    color: $color-texto;
+    margin-top: 15px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.imagen-contacto {
+    display: flex;
+    justify-content: center;
+}
+
+.formulario {
+    display: flex;
+    font-size: large;
+    text-align: $texto-alineado;
+    background-color: rgb(163, 41, 41);
+color: gray;
+    justify-content: center;
+}
+
+
+
+.Formulario-contacto {
+    padding: 20px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
 
 
 }
+
+.ubicacion {
+    display: flex;
+    font-size: large;
+    background-color: brown;
+    justify-content: center;
+
+}
+.maps {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 5px;
+}
+.redes {
+    display: flex;
+    justify-content: center;
+   
+
+}
+.facebook-contactos {
+    display: flex;
+    width: 2%;
+    height: auto;
+    display: inline-block;
+    justify-content: center;
+    
+    
+
+}
+
+.instagram-contactos {
+display: flex;
+    width: 2%;
+    height: auto;
+    display: inline-block;
+ 
+}
+
+.logo-Whatsapp {
+    width: 5ch;
+    position: sticky;
+    left: 160ch;
+    top: 10%;
+    bottom: 20ch;
+
+}
+
+
 
 .logo-contacto {
     width: 5ch;
@@ -98,12 +184,11 @@
 /* MAPAS*/
 .pie-pagina {
 
-    background-color: map-get($footer, bg-footer);
-    text-align: map-get($footer, texto-alineado);
-    color: map-get($footer, color-texto);
+    background-color: rgb(161, 41, 41);
+    color: white;
+    text-align: center;
     border: solid 5px;
     padding: 50px;
-
 
 
 

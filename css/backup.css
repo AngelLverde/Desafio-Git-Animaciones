@@ -277,7 +277,10 @@ font-size: larger;
     margin-top: 15px;
     margin-bottom: 25px;
 }
-
+.h1-contactos {
+    justify-content: center;
+    text-align: center;
+}
 .frase-principal-vender {
     font-size: large;
     text-align: center;
@@ -298,7 +301,7 @@ font-size: larger;
     background-color: rgb(163, 41, 41)
 }
 
-.formulario-contacto {
+.Formulario-contacto {
     padding: 25px;
 }
 
@@ -380,6 +383,7 @@ font-size: larger;
 .ubicacion {
     font-size: large;
     background-color: brown;
+    justify-content: center;
 }
 
 .u {

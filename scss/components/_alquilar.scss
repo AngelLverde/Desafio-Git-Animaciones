@@ -1,0 +1,146 @@
+@import "../base/variables";
+@import "../base/estilos-generales";
+@import "../base/mapas";
+@import "../base/extends";
+@import "../base/mixin";
+
+
+.cuerpo {
+    display: grid;
+    background-color: $bg-color-cuerpo;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: $color-texto;
+  
+    .encabezado {
+      background-color: $bg-color-general;
+      color:$color-texto;
+      border: solid;
+      padding: 5px;
+      text-align: $texto-alineado
+  
+    }
+  
+    .imagen-logo {
+      display: flex;
+      position: static;
+      top: 0%;
+      width: 10%;
+      border: solid 2px white;
+      margin-top: 5px;
+      margin-left: 05px;
+  
+    }
+  
+    .menu-navegable {
+      display: flex;
+      list-style: none;
+      justify-content: space-evenly;
+      text-align: center;
+      background-color: $bg-color-general;
+    }
+  
+    .menu-navegable li a {
+      text-decoration: none;
+      color: white;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 2px black;
+    }
+  
+    .menu-navegable li a:hover {
+      background-color: gray;
+    }
+  }
+
+  .frase-principal {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: white;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    .h1 {
+      padding-top: 25px;
+    }
+
+    
+    .logo-Whatsapp {
+        width: 5ch;
+        position: sticky;
+        left: 160ch;
+        top: 10%;
+        bottom: 20ch;
+    
+      }
+
+  }
+
+  .cantidad-dormitorios {
+    text-align: center;
+    padding-bottom:20px;
+    color: black;
+
+  .todos {
+    background-color: rgb(161, 41, 41);
+    color: white;
+    border: solid; }
+
+    .dormitorio1 
+    {
+      background-color: rgb(161, 41, 41);
+    color: white;
+    border: solid;
+    }
+    .dormitorios2 {
+      background-color: rgb(161, 41, 41);
+      color: white;
+      border: solid;
+  }
+  
+  .dormitorios3 {
+      background-color: rgb(161, 41, 41);
+      color: white;
+      border: solid;
+  }
+  
+  .otras-propiedades {
+      background-color: rgb(161, 41, 41);
+      color: white;
+      border: solid;
+  }
+  }
+    .depto-lima {
+      position: relative;
+
+    width: 33%;
+    height: auto;
+    left: 6%;
+    }
+
+    .depto-viamonte {
+      position: relative;
+  
+      width: 33%;
+      height: auto;
+      left: 25%;
+  }
+.calle-lima {
+  display: flex;
+  border: solid rgb(182, 175, 175);
+  justify-content: center;
+    color: rgb(141, 22, 22);
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.pie-pagina {
+  background-color: rgb(161, 41, 41);
+  color: white;
+  text-align: center;
+  border: solid 5px;
+  padding: 50px;
+}
+  
+
+  

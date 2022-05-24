@@ -1,0 +1,164 @@
+@import "../base/variables";
+@import "../base/estilos-generales";
+@import "../base/mapas";
+@import "../base/extends";
+@import "../base/mixin";
+
+
+.cuerpo {
+    display: grid;
+    background-color: $bg-color-cuerpo;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: $color-texto;
+
+    .encabezado {
+        background-color: $bg-color-general;
+        color: $color-texto;
+        border: solid;
+        padding: 5px;
+        text-align: $texto-alineado
+    }
+
+    .imagen-logo {
+        display: flex;
+        position: static;
+        top: 0%;
+        width: 10%;
+        border: solid 2px white;
+        margin-top: 5px;
+        margin-left: 05px;
+
+    }
+
+    .menu-navegable {
+        display: flex;
+        list-style: none;
+        justify-content: space-evenly;
+        text-align: center;
+        background-color: $bg-color-general;
+    }
+
+    .menu-navegable li a {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 2px black;
+    }
+
+    .menu-navegable li a:hover {
+        background-color: gray;
+    }
+}
+
+.logo-Whatsapp {
+    width: 5ch;
+    position: sticky;
+    left: 160ch;
+    top: 10%;
+    bottom: 20ch;
+
+}
+
+.frase-principal {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+
+    color: white;
+}
+
+.tarjeta {
+display: flex;    
+background: radial-gradient(circle, rgba(2, 0, 36, 0.5438550420168067) 0%, rgba(43, 63, 143, 0.21332282913165268) 54%, rgba(0, 212, 255, 0) 100%);
+color: rgb(20, 20, 20);
+justify-content: center;
+font-size: x-large;
+padding: 80px;
+margin-bottom: 30px;
+
+}
+.cantidad-dormitorios {
+    text-align: center;
+    padding-bottom: 10px;
+
+  
+
+}
+.dorm-1 {
+    position: relative;
+    width: 10%;
+    height: auto;
+    left: 15%;
+}
+.dorm-2 {
+    position: relative;
+    width: 10%;
+    height: auto;
+    left: 26%;
+}
+.dorm-3 {
+    position: relative;
+
+    width: 10%;
+    height: auto;
+    left: 38%;
+}
+.edificio-construccion {
+    position: relative;
+    width: 10%;
+    height: auto;
+    left: 48%;
+}
+
+.dormitorios-comprar {
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: rgb(161, 41, 41);
+    justify-content: center;
+
+}
+
+
+.dorm-1-2-3 {
+    display: flex;
+    color: rgb(161, 41, 41);
+    font-size: larger;
+    padding-left: 12%;
+    letter-spacing: 5px;
+    margin-bottom: 25px;
+
+}
+
+.desarrollos {
+    background-color: rgb(161, 41, 41);
+    width: 50%;
+    display: flex;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    justify-content: center;
+    color: white;
+    border: solid rgb(161, 41, 41)
+}
+
+.proyectos-comercializados {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 120px;
+    justify-content: center;
+
+
+}
+
+.pie-pagina {
+    background-color: rgb(161, 41, 41);
+    color: white;
+    text-align: center;
+    border: solid 5px;
+    padding: 50px;
+
+}
