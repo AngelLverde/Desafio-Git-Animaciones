@@ -749,30 +749,30 @@ h1 {
   background-color: rgb(161, 41, 41);
   color: white;
   border: solid;
-  padding: 5px;
   text-align: center;
   width: 100%;
   height: auto;
 }
-.cuerpo .imagen-logo {
+.cuerpo .encabezado .imagen-logo {
   display: flex;
-  position: absolute;
+  position: sticky;
   border: solid 2px white;
 }
-.cuerpo .menu-navegable {
+.cuerpo .encabezado .menu-navegable {
   display: flex;
   list-style: none;
+  width: 100%;
   justify-content: space-evenly;
   text-align: center;
   background-color: rgb(161, 41, 41);
 }
-.cuerpo .menu-navegable li a {
+.cuerpo .encabezado .menu-navegable li a {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
   text-shadow: 3px 3px 3px black;
 }
-.cuerpo .menu-navegable li a:hover {
+.cuerpo .encabezado .menu-navegable li a:hover {
   background-color: gray;
   border-radius: 6px;
   padding: 5px;

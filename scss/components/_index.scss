@@ -14,43 +14,48 @@
     color: $color-texto;
 
     .encabezado {
+       
         background-color: $bg-color-general;
         color: $color-texto;
         border: solid;
-        padding: 5px;
         text-align: $texto-alineado;
         width: 100%;
         height: auto;
+        
+            .imagen-logo {
+                display: flex;
+                position: sticky;
+                border: solid 2px white;
+        
+            }
+        
+            .menu-navegable {
+                display: flex;
+                list-style: none;
+                width: 100%;
+                justify-content: space-evenly;
+                text-align: $texto-alineado;
+                background-color: $bg-color-general;
+            }
+        
+            .menu-navegable li a {
+               
+                text-decoration: none;
+                color: $color-texto;
+                text-transform: uppercase;
+                text-shadow: 3px 3px 3px black;
+            }
+        
+            .menu-navegable li a:hover {
+                background-color: gray;
+                border-radius: 6px;
+                padding: 5px;
+            }
+
+    
     }
 
-    .imagen-logo {
-        display: flex;
-        position: absolute;
-        border: solid 2px white;
-
-    }
-
-    .menu-navegable {
-        display: flex;
-        list-style: none;
-        justify-content: space-evenly;
-        text-align: $texto-alineado;
-        background-color: $bg-color-general;
-    }
-
-    .menu-navegable li a {
-       
-        text-decoration: none;
-        color: $color-texto;
-        text-transform: uppercase;
-        text-shadow: 3px 3px 3px black;
-    }
-
-    .menu-navegable li a:hover {
-        background-color: gray;
-        border-radius: 6px;
-        padding: 5px;
-    }
+    
 }
 
 /* INICIA MAIN*/
