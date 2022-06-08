@@ -5,8 +5,31 @@
 }
 
 /*MEDIAS - QUERIES*/ 
-@media screen and ( max-width: 640px) {
+@media only screen and ( max-width: 479px) {
     .cuerpo {
         width: 100%;
+        margin: 0;
+        height: auto;
+    
+        .menu-navegable {
+            justify-content: center;
+        }
+        .proyectos-comercializados 
+        {
+            padding-bottom: 25px;
+        }
+    }
+}
+@media only screen and ( min-width: 451px) and ( max-width: 960px) {
+    .cuerpo {
+        width: 100%;
+        height: auto;
+        
+    }
+}
+@media only screen and ( min-width: 961px) {
+    .cuerpo {
+        width: 100%;
+        height: auto;
     }
 }

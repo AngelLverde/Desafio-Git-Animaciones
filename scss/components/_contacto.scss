@@ -79,11 +79,11 @@
     }
 
     .logo-Whatsapp {
-        width: 5ch;
+        width:55px;
         position: sticky;
-        left: 160ch;
-        top: 10%;
-        bottom: 20ch;
+        margin-right: 20px;
+        padding: bottom 0%;
+        z-index: 3;
     }
 
 }
@@ -92,7 +92,10 @@
 h1 {
     background-color: gray;
     color: $color-texto;
-    margin-top: 15px;
+   
+    background-color: gray;
+    margin: 20px;
+    padding: 20px;
     text-align: center;
     justify-content: center;
 }
@@ -136,7 +139,8 @@ color: gray;
     padding-bottom: 5px;
 }
 .redes {
-    @extend %flex;;
+    @extend %flex;
+
    
 
 }

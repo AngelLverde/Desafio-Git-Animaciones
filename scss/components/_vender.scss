@@ -58,21 +58,22 @@
 .frase-principal-vender {
   font-size: 30px;
   text-align: $texto-alineado;
-  margin: auto;
+  background-color: gray;
+  margin: 15px;
   margin-bottom: 50px;
   margin-top: 25px;
-  padding-top: auto;
+  padding: 5px;
   color: $color-texto;
   font-family: 'Times New Roman', Times, serif;
 
   
 }
 .logo-Whatsapp {
-  width: 5ch;
-  position: sticky;
-  left: 160ch;
-  top: 10%;
-  bottom: 20ch;
+  width:55px;
+        position: sticky;
+        margin-right: 20px;
+        padding: bottom 0%;
+        z-index: 3;
 
 }
 .formulario {

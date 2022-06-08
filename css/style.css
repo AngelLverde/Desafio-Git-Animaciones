@@ -9,9 +9,29 @@
 }
 
 /*MEDIAS - QUERIES*/
-@media screen and (max-width: 640px) {
+@media only screen and (max-width: 479px) {
   .cuerpo {
     width: 100%;
+    margin: 0;
+    height: auto;
+  }
+  .cuerpo .menu-navegable {
+    justify-content: center;
+  }
+  .cuerpo .proyectos-comercializados {
+    padding-bottom: 25px;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .cuerpo {
+    width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 961px) {
+  .cuerpo {
+    width: 100%;
+    height: auto;
   }
 }
 /*VARIABLES*/
@@ -22,9 +42,29 @@
 }
 
 /*MEDIAS - QUERIES*/
-@media screen and (max-width: 640px) {
+@media only screen and (max-width: 479px) {
   .cuerpo {
     width: 100%;
+    margin: 0;
+    height: auto;
+  }
+  .cuerpo .menu-navegable {
+    justify-content: center;
+  }
+  .cuerpo .proyectos-comercializados {
+    padding-bottom: 25px;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .cuerpo {
+    width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 961px) {
+  .cuerpo {
+    width: 100%;
+    height: auto;
   }
 }
 .parrafo-comentarios, .tarjeta, .frase-principal, .redes, .imagen-contacto, .section h1 {
@@ -86,18 +126,20 @@
   font-family: "Times New Roman", Times, serif;
 }
 .section .logo-Whatsapp {
-  width: 5ch;
+  width: 55px;
   position: sticky;
-  left: 160ch;
-  top: 10%;
-  bottom: 20ch;
+  margin-right: 20px;
+  padding: bottom 0%;
+  z-index: 3;
 }
 
 /* INICIA MAIN*/
 h1 {
   background-color: gray;
   color: white;
-  margin-top: 15px;
+  background-color: gray;
+  margin: 20px;
+  padding: 20px;
   text-align: center;
   justify-content: center;
 }
@@ -191,9 +233,29 @@ h1 {
 }
 
 /*MEDIAS - QUERIES*/
-@media screen and (max-width: 640px) {
+@media only screen and (max-width: 479px) {
   .cuerpo {
     width: 100%;
+    margin: 0;
+    height: auto;
+  }
+  .cuerpo .menu-navegable {
+    justify-content: center;
+  }
+  .cuerpo .proyectos-comercializados {
+    padding-bottom: 25px;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .cuerpo {
+    width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 961px) {
+  .cuerpo {
+    width: 100%;
+    height: auto;
   }
 }
 .parrafo-comentarios, .tarjeta, .frase-principal, .section h1, .imagen-contacto, .redes {
@@ -247,20 +309,21 @@ h1 {
 .frase-principal-vender {
   font-size: 30px;
   text-align: center;
-  margin: auto;
+  background-color: gray;
+  margin: 15px;
   margin-bottom: 50px;
   margin-top: 25px;
-  padding-top: auto;
+  padding: 5px;
   color: white;
   font-family: "Times New Roman", Times, serif;
 }
 
 .logo-Whatsapp {
-  width: 5ch;
+  width: 55px;
   position: sticky;
-  left: 160ch;
-  top: 10%;
-  bottom: 20ch;
+  margin-right: 20px;
+  padding: bottom 0%;
+  z-index: 3;
 }
 
 .formulario {
@@ -293,9 +356,29 @@ h1 {
 }
 
 /*MEDIAS - QUERIES*/
-@media screen and (max-width: 640px) {
+@media only screen and (max-width: 479px) {
   .cuerpo {
     width: 100%;
+    margin: 0;
+    height: auto;
+  }
+  .cuerpo .menu-navegable {
+    justify-content: center;
+  }
+  .cuerpo .proyectos-comercializados {
+    padding-bottom: 25px;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .cuerpo {
+    width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 961px) {
+  .cuerpo {
+    width: 100%;
+    height: auto;
   }
 }
 .parrafo-comentarios, .tarjeta, .frase-principal, .section h1, .imagen-contacto, .redes {
@@ -311,6 +394,7 @@ h1 {
   color: white;
 }
 .cuerpo .encabezado {
+  background-color: rgb(161, 41, 41);
   color: white;
   border: solid;
   padding: 5px;
@@ -345,18 +429,21 @@ h1 {
 }
 
 .logo-Whatsapp {
-  width: 5ch;
+  width: 55px;
   position: sticky;
-  left: 160ch;
-  top: 10%;
-  bottom: 20ch;
+  margin-right: 20px;
+  padding: bottom 0%;
+  z-index: 3;
 }
 
 .frase-principal {
   margin-bottom: 20px;
   font-family: "Times New Roman", Times, serif;
   font-size: 30px;
+  padding: 5px;
   color: white;
+  background-color: gray;
+  margin: 5px;
 }
 
 .tarjeta {
@@ -452,9 +539,29 @@ h1 {
 }
 
 /*MEDIAS - QUERIES*/
-@media screen and (max-width: 640px) {
+@media only screen and (max-width: 479px) {
   .cuerpo {
     width: 100%;
+    margin: 0;
+    height: auto;
+  }
+  .cuerpo .menu-navegable {
+    justify-content: center;
+  }
+  .cuerpo .proyectos-comercializados {
+    padding-bottom: 25px;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .cuerpo {
+    width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 961px) {
+  .cuerpo {
+    width: 100%;
+    height: auto;
   }
 }
 .parrafo-comentarios, .section h1, .imagen-contacto, .redes, .frase-principal, .tarjeta {
@@ -504,24 +611,28 @@ h1 {
 }
 
 .frase-principal {
+  background-color: gray;
+  margin: 10px;
+  padding: 2px;
   font-family: "Times New Roman", Times, serif;
   font-size: 30px;
   color: white;
-  padding-bottom: 25px;
-  padding-top: 25px;
+  padding-bottom: 5px;
 }
 .frase-principal .h1 {
   padding-top: 25px;
 }
 .frase-principal .logo-Whatsapp {
-  width: 5ch;
+  width: 55px;
   position: sticky;
-  left: 160ch;
-  top: 10%;
-  bottom: 20ch;
+  margin-right: 20px;
+  padding: bottom 0%;
+  z-index: 3;
 }
 
 .cantidad-dormitorios {
+  display: flex;
+  justify-content: space-evenly;
   text-align: center;
   padding-bottom: 20px;
   color: black;
@@ -530,26 +641,31 @@ h1 {
   background-color: rgb(161, 41, 41);
   color: white;
   border: solid;
+  padding: 5px;
 }
 .cantidad-dormitorios .dormitorio1 {
   background-color: rgb(161, 41, 41);
   color: white;
   border: solid;
+  padding: 5px;
 }
 .cantidad-dormitorios .dormitorios2 {
   background-color: rgb(161, 41, 41);
   color: white;
   border: solid;
+  padding: 5px;
 }
 .cantidad-dormitorios .dormitorios3 {
   background-color: rgb(161, 41, 41);
   color: white;
   border: solid;
+  padding: 5px;
 }
 .cantidad-dormitorios .otras-propiedades {
   background-color: rgb(161, 41, 41);
   color: white;
   border: solid;
+  padding: 5px;
 }
 
 .depto-lima {
@@ -592,9 +708,29 @@ h1 {
 }
 
 /*MEDIAS - QUERIES*/
-@media screen and (max-width: 640px) {
+@media only screen and (max-width: 479px) {
   .cuerpo {
     width: 100%;
+    margin: 0;
+    height: auto;
+  }
+  .cuerpo .menu-navegable {
+    justify-content: center;
+  }
+  .cuerpo .proyectos-comercializados {
+    padding-bottom: 25px;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 960px) {
+  .cuerpo {
+    width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 961px) {
+  .cuerpo {
+    width: 100%;
+    height: auto;
   }
 }
 .parrafo-comentarios, .section h1, .imagen-contacto, .redes, .frase-principal, .tarjeta {
@@ -615,17 +751,13 @@ h1 {
   border: solid;
   padding: 5px;
   text-align: center;
-  width: auto;
+  width: 100%;
   height: auto;
 }
 .cuerpo .imagen-logo {
   display: flex;
-  position: static;
-  top: 0%;
-  width: 10%;
+  position: absolute;
   border: solid 2px white;
-  margin-top: 5px;
-  margin-left: 5px;
 }
 .cuerpo .menu-navegable {
   display: flex;
@@ -638,10 +770,12 @@ h1 {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
-  text-shadow: 2px 2px 2px black;
+  text-shadow: 3px 3px 3px black;
 }
 .cuerpo .menu-navegable li a:hover {
   background-color: gray;
+  border-radius: 6px;
+  padding: 5px;
 }
 
 /* INICIA MAIN*/
@@ -654,7 +788,8 @@ h1 {
 .contenido h1 {
   background-color: gray;
   color: white;
-  margin-top: 50px;
+  margin-top: 5px;
+  padding: 5px;
 }
 .contenido .carousel {
   width: 80%;
@@ -668,11 +803,11 @@ h1 {
   font-size: 40px;
 }
 .contenido .logo-Whatsapp {
-  width: 5ch;
+  width: 55px;
   position: sticky;
-  left: 160ch;
-  top: 10%;
-  bottom: 20ch;
+  margin-right: 20px;
+  padding: bottom 0%;
+  z-index: 3;
 }
 .contenido .departamentos-nuevos {
   display: flex;
@@ -734,11 +869,21 @@ h1 {
 }
 
 .pie-pagina {
+  display: inline-block;
   background-color: rgb(161, 41, 41);
   color: white;
+  justify-content: space-between;
   text-align: center;
   border: solid 5px;
-  padding: 50px;
+  width: 100%;
+}
+.pie-pagina .menu-footer {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.pie-pagina .ul li a {
+  justify-content: flex-end;
 }
 
 /*# sourceMappingURL=style.css.map */

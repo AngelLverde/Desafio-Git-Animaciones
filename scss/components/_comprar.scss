@@ -12,7 +12,7 @@
     color: $color-texto;
 
     .encabezado {
-        background-color:map-get($header, $bg-color-general);
+        background-color: $bg-color-general;
         color: $color-texto;
         border: solid;
         padding: 5px;
@@ -53,11 +53,11 @@
 }
 
 .logo-Whatsapp {
-    width: 5ch;
-    position: sticky;
-    left: 160ch;
-    top: 10%;
-    bottom: 20ch;
+     width:55px;
+        position: sticky;
+        margin-right: 20px;
+        padding: bottom 0%;
+        z-index: 3;
 
 }
 
@@ -66,7 +66,10 @@
     margin-bottom: 20px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
+    padding: 5px;
     color: $color-texto;
+    background-color: gray;
+margin: 5px;
 }
 
 .tarjeta {

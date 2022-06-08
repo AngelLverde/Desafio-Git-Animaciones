@@ -55,28 +55,33 @@
 
   .frase-principal {
     @extend %flex;
+    background-color: gray;
+    margin: 10px;
+    padding: 2px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
     color: $color-texto;
-    padding-bottom: 25px;
-    padding-top: 25px;
+    padding-bottom: 5px;
+    
     .h1 {
       padding-top: 25px;
     }
 
     
     .logo-Whatsapp {
-        width: 5ch;
-        position: sticky;
-        left: 160ch;
-        top: 10%;
-        bottom: 20ch;
+      width:55px;
+      position: sticky;
+      margin-right: 20px;
+      padding: bottom 0%;
+      z-index: 3;
     
       }
 
   }
 
   .cantidad-dormitorios {
+    display: flex;
+    justify-content: space-evenly;
     text-align: center;
     padding-bottom:20px;
     color: black;
@@ -84,30 +89,35 @@
   .todos {
     background-color: $bg-color-general;
     color: $color-texto;
-    border: solid; }
+    border: solid; 
+  padding: 5px;}
 
     .dormitorio1 
     {
       background-color: $bg-color-general;
     color: $color-texto;
     border: solid;
+    padding: 5px;
     }
     .dormitorios2 {
       background-color: $bg-color-general;
       color: $color-texto;
       border: solid;
+      padding: 5px;
   }
   
   .dormitorios3 {
       background-color: $bg-color-general;
       color: $color-texto;
       border: solid;
+      padding: 5px;
   }
   
   .otras-propiedades {
       background-color: $bg-color-general;
       color: $color-texto;
       border: solid;
+      padding: 5px;
   }
   }
     .depto-lima {
