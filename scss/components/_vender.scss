@@ -14,24 +14,19 @@
   color: $color-texto;
 
   .encabezado {
-    background-color:map-get($header, $bg-color-general);
+    background-color: $bg-color-general;
     color: $color-texto;
     border: solid;
-    padding: 5px;
     text-align: $texto-alineado;
-    width: auto;
+    width: 100%;
     height: auto;
   }
 
   .imagen-logo {
     display: flex;
-    position: static;
-    top: 0%;
-    width: 10%;
+    position: sticky;
     border: solid 2px white;
-    margin-top: 5px;
-    margin-left: 05px;
-
+   
   }
 
   .menu-navegable {
@@ -66,16 +61,21 @@
   color: $color-texto;
   font-family: 'Times New Roman', Times, serif;
 
-  
+
 }
+
 .logo-Whatsapp {
-  width:55px;
-        position: sticky;
-        margin-right: 20px;
-        padding: bottom 0%;
+  display: flex;
+        position: fixed;
+        height: 3.5rem;
+        width: auto;
+        left: 95%;
+        bottom: 0;
+        top:55%;
         z-index: 3;
 
 }
+
 .formulario {
 
   color: $color-texto;
@@ -83,15 +83,17 @@
   text-align: center;
   background-color: rgb(163, 41, 41);
 }
-.formulario-completar{
+
+.formulario-completar {
   color: black;
   font-size: 25px;
   font-family: 'Times New Roman', Times, serif;
   padding: 50px;
 }
+
 .pie-pagina {
-  background-color:$bg-color-general;
-  color:$color-texto;
+  background-color: $bg-color-general;
+  color: $color-texto;
   text-align: $texto-alineado;
   border: solid 5px;
   padding: 50px;

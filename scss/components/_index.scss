@@ -91,11 +91,16 @@
 
 
     .logo-Whatsapp {
-        width:55px;
-        position: sticky;
-        margin-right: 20px;
-        padding: bottom 0%;
+        display: flex;
+        position: fixed;
+        height: 3.5rem;
+        width: auto;
+        left: 93%;
+        bottom: 0;
+        top:55%;
+    
         z-index: 3;
+        
     }
 
     .departamentos-nuevos {
@@ -136,17 +141,19 @@
 .desarrollos {
     background-color: rgb(161, 41, 41);
     width: 50%;
+    text-decoration: none;
     display: flex;
     margin: auto;
     margin-bottom: 25px;
     justify-content: center;
     font-size: 25px;
+    
 
     color: white;
     border: solid rgb(161, 41, 41);
 
     .desarrollos-direc {
-        text-decoration: underline white;
+        text-decoration:none;
         background-color: rgb(161, 41, 41);
         text-align: center;
         color: white;

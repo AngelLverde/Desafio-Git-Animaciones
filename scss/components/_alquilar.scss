@@ -7,6 +7,7 @@
 
 .cuerpo {
     display: grid;
+    width: 100%;
     background-color: $bg-color-cuerpo;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: $color-texto;
@@ -19,38 +20,59 @@
       text-align: $texto-alineado;
       width: auto;
       height: auto;
+      
+
+      nav {
+        display: flex;
+align-items: center;
+justify-content: space-between;
+
+@media only screen and ( max-width: 420px) and ( max-width: 1200px) {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  .imagen-logo {
+    display: none;
+  }
+  
+     }
+
+        .imagen-logo {
+          display: flex;
+          position: relative;
+         width: 95px;
+         height: 90px;
+          border: solid 2px white;
+          @media only screen and ( max-width: 590px) and ( max-width: 1200px) {
+         display: none;
+            }
+          
+      
+        }
+      
+        .menu-navegable {
+          display: flex;
+          list-style: none;
+          justify-content: space-evenly;
+          text-align: center;
+          background-color: $bg-color-general;
+        }
+      
+        .menu-navegable li a {
+          text-decoration: none;
+          color: $color-texto;
+          text-transform: uppercase;
+          text-shadow: 2px 2px 2px black;
+        }
+      
+        .menu-navegable li a:hover {
+          background-color: gray;
+        }
+      }
   
     }
   
-    .imagen-logo {
-      display: flex;
-      position: static;
-      top: 0%;
-      width: 10%;
-      border: solid 2px white;
-      margin-top: 5px;
-      margin-left: 05px;
-  
-    }
-  
-    .menu-navegable {
-      display: flex;
-      list-style: none;
-      justify-content: space-evenly;
-      text-align: center;
-      background-color: $bg-color-general;
-    }
-  
-    .menu-navegable li a {
-      text-decoration: none;
-      color: $color-texto;
-      text-transform: uppercase;
-      text-shadow: 2px 2px 2px black;
-    }
-  
-    .menu-navegable li a:hover {
-      background-color: gray;
-    }
+    
   }
 
   .frase-principal {
@@ -69,12 +91,17 @@
 
     
     .logo-Whatsapp {
-      width:55px;
-      position: sticky;
-      margin-right: 20px;
-      padding: bottom 0%;
-      z-index: 3;
-    
+      display: flex;
+        position: fixed;
+        height: 3.5rem;
+        width: auto;
+        left: 90%;
+        bottom: 0;
+        top:55%;
+        z-index: 3;
+        
+        
+       
       }
 
   }

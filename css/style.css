@@ -88,29 +88,27 @@
   width: auto;
   height: auto;
 }
-.cuerpo .encabezado .imagen-logo {
+.cuerpo .imagen-logo {
   display: flex;
   position: static;
-  top: 0%;
-  width: 10%;
   border: solid 2px white;
   margin-top: 5px;
   margin-left: 5px;
 }
-.cuerpo .encabezado .nav .menu-navegable {
+.cuerpo .menu-navegable {
   display: flex;
   list-style: none;
   justify-content: space-evenly;
   text-align: center;
   background-color: rgb(161, 41, 41);
 }
-.cuerpo .encabezado .nav .menu-navegable .menu-navegable li a {
+.cuerpo .menu-navegable li a {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
   text-shadow: 2px 2px 2px black;
 }
-.cuerpo .encabezado .nav .menu-navegable .menu-navegable li a .menu-navegable li a:hover {
+.cuerpo .menu-navegable li a:hover {
   background-color: gray;
 }
 
@@ -126,10 +124,13 @@
   font-family: "Times New Roman", Times, serif;
 }
 .section .logo-Whatsapp {
-  width: 55px;
-  position: sticky;
-  margin-right: 20px;
-  padding: bottom 0%;
+  display: flex;
+  position: fixed;
+  height: 3.5rem;
+  width: auto;
+  left: 95%;
+  bottom: 0;
+  top: 55%;
   z-index: 3;
 }
 
@@ -272,21 +273,17 @@ h1 {
   color: white;
 }
 .cuerpo .encabezado {
+  background-color: rgb(161, 41, 41);
   color: white;
   border: solid;
-  padding: 5px;
   text-align: center;
-  width: auto;
+  width: 100%;
   height: auto;
 }
 .cuerpo .imagen-logo {
   display: flex;
-  position: static;
-  top: 0%;
-  width: 10%;
+  position: sticky;
   border: solid 2px white;
-  margin-top: 5px;
-  margin-left: 5px;
 }
 .cuerpo .menu-navegable {
   display: flex;
@@ -319,10 +316,13 @@ h1 {
 }
 
 .logo-Whatsapp {
-  width: 55px;
-  position: sticky;
-  margin-right: 20px;
-  padding: bottom 0%;
+  display: flex;
+  position: fixed;
+  height: 3.5rem;
+  width: auto;
+  left: 95%;
+  bottom: 0;
+  top: 55%;
   z-index: 3;
 }
 
@@ -397,19 +397,14 @@ h1 {
   background-color: rgb(161, 41, 41);
   color: white;
   border: solid;
-  padding: 5px;
   text-align: center;
-  width: auto;
+  width: 100%;
   height: auto;
 }
 .cuerpo .imagen-logo {
   display: flex;
-  position: static;
-  top: 0%;
-  width: 10%;
+  position: sticky;
   border: solid 2px white;
-  margin-top: 5px;
-  margin-left: 5px;
 }
 .cuerpo .menu-navegable {
   display: flex;
@@ -429,10 +424,13 @@ h1 {
 }
 
 .logo-Whatsapp {
-  width: 55px;
-  position: sticky;
-  margin-right: 20px;
-  padding: bottom 0%;
+  display: flex;
+  position: fixed;
+  height: 3.5rem;
+  width: auto;
+  left: 95%;
+  bottom: 0;
+  top: 55%;
   z-index: 3;
 }
 
@@ -520,7 +518,6 @@ h1 {
   text-align: center;
   margin-top: 100px;
   margin-bottom: 120px;
-  justify-content: center;
 }
 
 .pie-pagina {
@@ -572,6 +569,7 @@ h1 {
 
 .cuerpo {
   display: grid;
+  width: 100%;
   background-color: circle, rgba(2, 0, 36, 0.543855042) 0%, rgba(43, 63, 143, 0.2133228291) 54%, rgba(0, 212, 255, 0) 100%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
@@ -584,29 +582,47 @@ h1 {
   width: auto;
   height: auto;
 }
-.cuerpo .imagen-logo {
+.cuerpo .encabezado nav {
   display: flex;
-  position: static;
-  top: 0%;
-  width: 10%;
-  border: solid 2px white;
-  margin-top: 5px;
-  margin-left: 5px;
+  align-items: center;
+  justify-content: space-between;
 }
-.cuerpo .menu-navegable {
+@media only screen and (max-width: 420px) and (max-width: 1200px) {
+  .cuerpo .encabezado nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .cuerpo .encabezado nav .imagen-logo {
+    display: none;
+  }
+}
+.cuerpo .encabezado nav .imagen-logo {
+  display: flex;
+  position: relative;
+  width: 95px;
+  height: 90px;
+  border: solid 2px white;
+}
+@media only screen and (max-width: 590px) and (max-width: 1200px) {
+  .cuerpo .encabezado nav .imagen-logo {
+    display: none;
+  }
+}
+.cuerpo .encabezado nav .menu-navegable {
   display: flex;
   list-style: none;
   justify-content: space-evenly;
   text-align: center;
   background-color: rgb(161, 41, 41);
 }
-.cuerpo .menu-navegable li a {
+.cuerpo .encabezado nav .menu-navegable li a {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
   text-shadow: 2px 2px 2px black;
 }
-.cuerpo .menu-navegable li a:hover {
+.cuerpo .encabezado nav .menu-navegable li a:hover {
   background-color: gray;
 }
 
@@ -623,10 +639,13 @@ h1 {
   padding-top: 25px;
 }
 .frase-principal .logo-Whatsapp {
-  width: 55px;
-  position: sticky;
-  margin-right: 20px;
-  padding: bottom 0%;
+  display: flex;
+  position: fixed;
+  height: 3.5rem;
+  width: auto;
+  left: 90%;
+  bottom: 0;
+  top: 55%;
   z-index: 3;
 }
 
@@ -803,10 +822,13 @@ h1 {
   font-size: 40px;
 }
 .contenido .logo-Whatsapp {
-  width: 55px;
-  position: sticky;
-  margin-right: 20px;
-  padding: bottom 0%;
+  display: flex;
+  position: fixed;
+  height: 3.5rem;
+  width: auto;
+  left: 93%;
+  bottom: 0;
+  top: 55%;
   z-index: 3;
 }
 .contenido .departamentos-nuevos {
@@ -836,6 +858,7 @@ h1 {
 .desarrollos {
   background-color: rgb(161, 41, 41);
   width: 50%;
+  text-decoration: none;
   display: flex;
   margin: auto;
   margin-bottom: 25px;
@@ -845,7 +868,7 @@ h1 {
   border: solid rgb(161, 41, 41);
 }
 .desarrollos .desarrollos-direc {
-  text-decoration: underline white;
+  text-decoration: none;
   background-color: rgb(161, 41, 41);
   text-align: center;
   color: white;

@@ -15,20 +15,16 @@
         background-color: $bg-color-general;
         color: $color-texto;
         border: solid;
-        padding: 5px;
         text-align: $texto-alineado;
-        width: auto;
+        width: 100%;
         height: auto;
     }
 
     .imagen-logo {
         display: flex;
-        position: static;
-        top: 0%;
-        width: 10%;
+        position: sticky;
         border: solid 2px white;
-        margin-top: 5px;
-        margin-left: 05px;
+       
 
     }
 
@@ -53,10 +49,14 @@
 }
 
 .logo-Whatsapp {
-     width:55px;
-        position: sticky;
-        margin-right: 20px;
-        padding: bottom 0%;
+    display: flex;
+        position: fixed;
+        height: 3.5rem;
+        width: auto;
+        left: 95%;
+        bottom: 0;
+        top:55%;
+    
         z-index: 3;
 
 }
@@ -151,7 +151,7 @@ margin-bottom: 30px;
     text-align: center;
     margin-top: 100px;
     margin-bottom: 120px;
-    justify-content: center;
+    
 
 
 }
