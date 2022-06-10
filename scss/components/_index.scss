@@ -6,63 +6,64 @@
 @import "../base/extends";
 @import "../base/mixin";
 
-
+/* BODY*/
 .cuerpo {
     display: grid;
     background-color: $bg-color-cuerpo;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: $color-texto;
 
+    /*HEADER*/
     .encabezado {
-       
         background-color: $bg-color-general;
         color: $color-texto;
         border: solid;
         text-align: $texto-alineado;
         width: 100%;
         height: auto;
-        
-            .imagen-logo {
-                display: flex;
-                position: sticky;
-                border: solid 2px white;
-        
-            }
-        
-            .menu-navegable {
-                display: flex;
-                list-style: none;
-                width: 100%;
-                justify-content: space-evenly;
-                text-align: $texto-alineado;
-                background-color: $bg-color-general;
-            }
-        
-            .menu-navegable li a {
-               
-                text-decoration: none;
-                color: $color-texto;
-                text-transform: uppercase;
-                text-shadow: 3px 3px 3px black;
-            }
-        
-            .menu-navegable li a:hover {
-                background-color: gray;
-                border-radius: 6px;
-                padding: 5px;
-            }
 
-    
+
+        .imagen-logo {
+            display: flex;
+            position: sticky;
+            border: solid 2px white;
+
+        }
+
+        .menu-navegable {
+            display: flex;
+            list-style: none;
+            width: 100%;
+            justify-content: space-evenly;
+            text-align: $texto-alineado;
+            background-color: $bg-color-general;
+        }
+
+        .menu-navegable li a {
+
+            text-decoration: none;
+            color: $color-texto;
+            text-transform: uppercase;
+            text-shadow: 3px 3px 3px black;
+        }
+
+        .menu-navegable li a :hover {
+            background-color: gray;
+            border-radius: 6px;
+            padding: 5px;
+        }
+
+
     }
 
-    
+
 }
 
 /* INICIA MAIN*/
 .contenido {
 
-    color: rgb(161, 41, 41);
-    text-align: center;
+    color: $bg-color-general;
+    text-align: $texto-alineado;
     justify-content: center;
     margin: auto;
 
@@ -73,6 +74,7 @@
         padding: 5px;
 
     }
+    /* CAROUSEL - BOOTSTRAP*/ 
 
     .carousel {
         width: 80%;
@@ -93,14 +95,13 @@
     .logo-Whatsapp {
         display: flex;
         position: fixed;
-        height: 3.5rem;
+        height: 3, 5rem;
         width: auto;
         left: 93%;
         bottom: 0;
-        top:55%;
-    
-        z-index: 3;
-        
+        top: 55%;
+
+
     }
 
     .departamentos-nuevos {
@@ -138,6 +139,9 @@
 }
 
 /* FINALIZA MAIN*/
+
+/* SECCION DESARROLLOS*/
+
 .desarrollos {
     background-color: rgb(161, 41, 41);
     width: 50%;
@@ -147,13 +151,13 @@
     margin-bottom: 25px;
     justify-content: center;
     font-size: 25px;
-    
+
 
     color: white;
     border: solid rgb(161, 41, 41);
 
     .desarrollos-direc {
-        text-decoration:none;
+        text-decoration: none;
         background-color: rgb(161, 41, 41);
         text-align: center;
         color: white;
@@ -161,6 +165,9 @@
     }
 
 }
+
+
+/* COMENTARIOS DE LOS CLIENTES*/
 
 .parrafo-comentarios {
     @extend %flex;
@@ -181,24 +188,27 @@
 
 }
 
+/* FOOTER*/
+
 .pie-pagina {
     display: inline-block;
     background-color: $bg-color-general;
     color: $color-texto;
     justify-content: space-between;
-    text-align: center;
+    text-align: $texto-alineado;
     border: solid 5px;
     width: 100%;
 
-    .menu-footer{
+    .menu-footer {
         list-style: none;
-        display: flex ;
-    justify-content:space-between;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .ul li a {
+        justify-content: flex-end;
+    }
+
 }
 
-        .ul li a {
-            justify-content: flex-end;
-        }
-    
-
-}
+/* FINALIZA BODY*/

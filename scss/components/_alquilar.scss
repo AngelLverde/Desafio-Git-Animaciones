@@ -4,180 +4,201 @@
 @import "../base/extends";
 @import "../base/mixin";
 
-
+/* BODY*/ 
 .cuerpo {
-    display: grid;
-    width: 100%;
-    background-color: $bg-color-cuerpo;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: $color-texto;
-  
-    .encabezado {
-      background-color:map-get($header, $bg-color-general);
-      color: $color-texto;
-      border: solid;
-      padding: 5px;
-      text-align: $texto-alineado;
-      width: auto;
-      height: auto;
-      
-
-      nav {
-        display: flex;
-align-items: center;
-justify-content: space-between;
-
-@media only screen and ( max-width: 420px) and ( max-width: 1200px) {
-  display: flex;
+  display: grid;
+  background: radial-gradient(circle, rgba(2, 0, 36, 0.5438550420168067) 0%, rgba(43, 63, 143, 0.21332282913165268) 54%, rgba(0, 212, 255, 0) 100%);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: $color-texto;
   width: 100%;
-  justify-content: space-around;
-  .imagen-logo {
-    display: none;
-  }
-  
-     }
+/* HEADER*/
 
-        .imagen-logo {
-          display: flex;
-          position: relative;
-         width: 95px;
-         height: 90px;
-          border: solid 2px white;
-          @media only screen and ( max-width: 590px) and ( max-width: 1200px) {
-         display: none;
-            }
-          
-      
-        }
-      
-        .menu-navegable {
-          display: flex;
-          list-style: none;
-          justify-content: space-evenly;
-          text-align: center;
-          background-color: $bg-color-general;
-        }
-      
-        .menu-navegable li a {
-          text-decoration: none;
-          color: $color-texto;
-          text-transform: uppercase;
-          text-shadow: 2px 2px 2px black;
-        }
-      
-        .menu-navegable li a:hover {
-          background-color: gray;
-        }
-      }
-  
-    }
-  
-    
-  }
-
-  .frase-principal {
-    @extend %flex;
-    background-color: gray;
-    margin: 10px;
-    padding: 2px;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
+  .encabezado {
+    background-color: map-get($header, $bg-color-general);
     color: $color-texto;
-    padding-bottom: 5px;
-    
-    .h1 {
-      padding-top: 25px;
+    border: solid;
+    padding: 5px;
+    text-align: $texto-alineado;
+    width: 100%;
+    height: auto;
+
+    @media only screen and (max-width: 420px) and (max-width: 1200px) {
+      width: 100%;
     }
 
-    
-    .logo-Whatsapp {
+    nav {
       display: flex;
-        position: fixed;
-        height: 3.5rem;
-        width: auto;
-        left: 90%;
-        bottom: 0;
-        top:55%;
-        z-index: 3;
-        
-        
-       
+      align-items: $texto-alineado;
+      justify-content: space-between;
+      width: 100%;
+
+      
+
+      .imagen-logo {
+        display: flex;
+        position: relative;
+        width: 95px;
+        height: 90px;
+        border: solid 2px white;
+
+        @media only screen and (max-width: 590px) and (max-width: 1200px) {
+          display: none;
+        }
+
+
       }
+
+      .menu-navegable {
+        display: flex;
+        list-style: none;
+        justify-content: space-evenly;
+        text-align: $texto-alineado;
+        background-color: $bg-color-general;
+      }
+
+      .menu-navegable li a {
+        text-decoration: none;
+        color: $color-texto;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 2px black;
+      }
+
+      .menu-navegable li a:hover {
+        background-color: gray;
+        
+            border-radius: 6px;
+            padding: 5px;
+      }
+    }
 
   }
 
-  .cantidad-dormitorios {
+
+}
+
+/* FRASE PRINCIPAL ALQUILAR*/ 
+
+.frase-principal {
+  @extend %flex;
+  background-color: gray;
+  margin: 10px;
+  padding: 2px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  color: $color-texto;
+  padding-bottom: 5px;
+
+  .h1 {
+    padding-top: 25px;
+  }
+
+
+  .logo-Whatsapp {
     display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    padding-bottom:20px;
-    color: black;
+    position: fixed;
+    height: 5rem;
+    width: auto;
+    left: 93%;
+    bottom: 0;
+    top:55%;
+    z-index: 3;
+
+  }
+
+}
+
+
+/* SELECCIONAR CANTIDAD DE DORMITORIOS*/ 
+
+.cantidad-dormitorios {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: $texto-alineado;
+  padding-bottom: 20px;
+  color: black;
 
   .todos {
     background-color: $bg-color-general;
     color: $color-texto;
-    border: solid; 
-  padding: 5px;}
+    border: solid;
+    padding: 5px;
+  }
 
-    .dormitorio1 
-    {
-      background-color: $bg-color-general;
+  .dormitorio1 {
+    background-color: $bg-color-general;
     color: $color-texto;
     border: solid;
     padding: 5px;
-    }
-    .dormitorios2 {
-      background-color: $bg-color-general;
-      color: $color-texto;
-      border: solid;
-      padding: 5px;
   }
-  
+
+  .dormitorios2 {
+    background-color: $bg-color-general;
+    color: $color-texto;
+    border: solid;
+    padding: 5px;
+  }
+
   .dormitorios3 {
-      background-color: $bg-color-general;
-      color: $color-texto;
-      border: solid;
-      padding: 5px;
+    background-color: $bg-color-general;
+    color: $color-texto;
+    border: solid;
+    padding: 5px;
   }
-  
+
   .otras-propiedades {
-      background-color: $bg-color-general;
-      color: $color-texto;
-      border: solid;
-      padding: 5px;
+    background-color: $bg-color-general;
+    color: $color-texto;
+    border: solid;
+    padding: 5px;
   }
-  }
-    .depto-lima {
-      position: relative;
+}
 
-    width: 33%;
-    height: auto;
-    left: 6%;
-    }
+.depto-lima {
+  position: relative;
 
-    .depto-viamonte {
-      position: relative;
-  
-      width: 33%;
-      height: auto;
-      left: 25%;
-  }
+  width: 33%;
+  height: auto;
+  left: 6%;
+}
+
+.depto-viamonte {
+  position: relative;
+
+  width: 33%;
+  height: auto;
+  left: 25%;
+}
+
 .calle-lima {
   display: flex;
   border: solid rgb(182, 175, 175);
   justify-content: center;
-    color: rgb(141, 22, 22);
-    margin-bottom: 20px;
-    margin-top: 10px;
+  color: $bg-color-general;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
+
+/* FOOTER*/
 
 .pie-pagina {
+  display: inline-block;
   background-color: $bg-color-general;
   color: $color-texto;
-  text-align:$texto-alineado;
+  justify-content: space-between;
+  text-align: $texto-alineado;
   border: solid 5px;
-  padding: 50px;
-}
-  
+  width: 100%;
 
-  
+  .menu-footer {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .ul li a {
+      justify-content: flex-end;
+  }
+
+}
+
+/* FINALIZA BODY*/

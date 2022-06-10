@@ -73,19 +73,20 @@
   justify-content: center;
 }
 
-/* HEADER*/
+/* BODY*/
 .cuerpo {
   display: grid;
   background: radial-gradient(circle, rgba(2, 0, 36, 0.543855042) 0%, rgba(43, 63, 143, 0.2133228291) 54%, rgba(0, 212, 255, 0) 100%);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
+  /* HEADER*/
 }
 .cuerpo .encabezado {
+  background-color: rgb(161, 41, 41);
   color: white;
   border: solid;
-  padding: 5px;
   text-align: center;
-  width: auto;
+  width: 100%;
   height: auto;
 }
 .cuerpo .imagen-logo {
@@ -126,9 +127,9 @@
 .section .logo-Whatsapp {
   display: flex;
   position: fixed;
-  height: 3.5rem;
+  height: 5rem;
   width: auto;
-  left: 95%;
+  left: 93%;
   bottom: 0;
   top: 55%;
   z-index: 3;
@@ -145,6 +146,18 @@ h1 {
   justify-content: center;
 }
 
+.logo-Whatsapp {
+  display: flex;
+  position: fixed;
+  height: 5rem;
+  width: auto;
+  left: 93%;
+  bottom: 0;
+  top: 55%;
+  z-index: 3;
+}
+
+/* FORMULARIO BOOTSTRAP*/
 .formulario {
   display: flex;
   font-size: large;
@@ -161,6 +174,7 @@ h1 {
   font-size: 20px;
 }
 
+/* SECCION UBICACION*/
 .ubicacion {
   display: flex;
   font-size: large;
@@ -177,7 +191,7 @@ h1 {
 
 .facebook-contactos {
   display: flex;
-  width: 2%;
+  width: 2rem;
   height: auto;
   display: inline-block;
   justify-content: center;
@@ -185,17 +199,9 @@ h1 {
 
 .instagram-contactos {
   display: flex;
-  width: 2%;
+  width: 2rem;
   height: auto;
   display: inline-block;
-}
-
-.logo-Whatsapp {
-  width: 5ch;
-  position: sticky;
-  left: 160ch;
-  top: 10%;
-  bottom: 20ch;
 }
 
 .logo-contacto {
@@ -207,19 +213,25 @@ h1 {
 }
 
 /* FOOTER*/
-/* MAPAS*/
 .pie-pagina {
+  display: inline-block;
   background-color: rgb(161, 41, 41);
   color: white;
+  justify-content: space-between;
   text-align: center;
   border: solid 5px;
-  padding: 50px;
+  width: 100%;
 }
-.pie-pagina .facebook {
-  width: 2%;
-  height: auto;
+.pie-pagina .menu-footer {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.pie-pagina .ul li a {
+  justify-content: flex-end;
 }
 
+/* FINALIZA BODY*/
 .parrafo-comentarios, .tarjeta, .frase-principal, .section h1, .imagen-contacto, .redes {
   display: flex;
   text-align: center;
@@ -265,44 +277,66 @@ h1 {
   justify-content: center;
 }
 
-/*VENDER*/
+/*BODY*/
 .cuerpo {
   display: grid;
   background-color: circle, rgba(2, 0, 36, 0.543855042) 0%, rgba(43, 63, 143, 0.2133228291) 54%, rgba(0, 212, 255, 0) 100%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
+  width: 100%;
+  /* HEADER*/
 }
 .cuerpo .encabezado {
-  background-color: rgb(161, 41, 41);
   color: white;
   border: solid;
+  padding: 5px;
   text-align: center;
   width: 100%;
   height: auto;
 }
-.cuerpo .imagen-logo {
+.cuerpo .encabezado nav {
   display: flex;
-  position: sticky;
+  align-items: center;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 420px) and (max-width: 1200px) {
+  .cuerpo .encabezado nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+.cuerpo .encabezado nav .imagen-logo {
+  display: flex;
+  position: relative;
+  width: 95px;
+  height: 90px;
   border: solid 2px white;
 }
-.cuerpo .menu-navegable {
+@media only screen and (max-width: 590px) and (max-width: 1200px) {
+  .cuerpo .encabezado nav .imagen-logo {
+    display: none;
+  }
+}
+.cuerpo .encabezado nav .menu-navegable {
   display: flex;
   list-style: none;
   justify-content: space-evenly;
   text-align: center;
   background-color: rgb(161, 41, 41);
 }
-.cuerpo .menu-navegable li a {
+.cuerpo .encabezado nav .menu-navegable li a {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
   text-shadow: 2px 2px 2px black;
 }
-.cuerpo .menu-navegable li a:hover {
+.cuerpo .encabezado nav .menu-navegable li a:hover {
   background-color: gray;
 }
 
 /* CIERRO HEADER*/
+/* H1-VENDER*/
 .frase-principal-vender {
   font-size: 30px;
   text-align: center;
@@ -320,17 +354,17 @@ h1 {
   position: fixed;
   height: 3.5rem;
   width: auto;
-  left: 95%;
+  left: 93%;
   bottom: 0;
-  top: 55%;
-  z-index: 3;
+  z-index: 2;
 }
 
+/* FORMULARIO - BOOTSTRAP*/
 .formulario {
   color: white;
-  font-size: large;
+  font-size: 20px;
   text-align: center;
-  background-color: rgb(163, 41, 41);
+  background-color: rgb(161, 41, 41);
 }
 
 .formulario-completar {
@@ -340,14 +374,26 @@ h1 {
   padding: 50px;
 }
 
+/* FOOTER*/
 .pie-pagina {
+  display: inline-block;
   background-color: rgb(161, 41, 41);
   color: white;
+  justify-content: space-between;
   text-align: center;
   border: solid 5px;
-  padding: 50px;
+  width: 100%;
+}
+.pie-pagina .menu-footer {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.pie-pagina .ul li a {
+  justify-content: flex-end;
 }
 
+/* FINALIZA BODY*/
 /*VARIABLES*/
 * {
   margin: 0;
@@ -387,39 +433,60 @@ h1 {
   justify-content: center;
 }
 
+/* BODY*/
 .cuerpo {
   display: grid;
   background-color: circle, rgba(2, 0, 36, 0.543855042) 0%, rgba(43, 63, 143, 0.2133228291) 54%, rgba(0, 212, 255, 0) 100%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
+  /* HEADER*/
 }
 .cuerpo .encabezado {
-  background-color: rgb(161, 41, 41);
   color: white;
   border: solid;
+  padding: 5px;
   text-align: center;
-  width: 100%;
+  width: auto;
   height: auto;
 }
-.cuerpo .imagen-logo {
+.cuerpo .encabezado nav {
   display: flex;
-  position: sticky;
+  align-items: center;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 420px) and (max-width: 1200px) {
+  .cuerpo .encabezado nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+.cuerpo .encabezado nav .imagen-logo {
+  display: flex;
+  position: relative;
+  width: 95px;
+  height: 90px;
   border: solid 2px white;
 }
-.cuerpo .menu-navegable {
+@media only screen and (max-width: 590px) and (max-width: 1200px) {
+  .cuerpo .encabezado nav .imagen-logo {
+    display: none;
+  }
+}
+.cuerpo .encabezado nav .menu-navegable {
   display: flex;
   list-style: none;
   justify-content: space-evenly;
   text-align: center;
   background-color: rgb(161, 41, 41);
 }
-.cuerpo .menu-navegable li a {
+.cuerpo .encabezado nav .menu-navegable li a {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
   text-shadow: 2px 2px 2px black;
 }
-.cuerpo .menu-navegable li a:hover {
+.cuerpo .encabezado nav .menu-navegable li a:hover {
   background-color: gray;
 }
 
@@ -428,12 +495,13 @@ h1 {
   position: fixed;
   height: 3.5rem;
   width: auto;
-  left: 95%;
+  left: 93%;
   bottom: 0;
   top: 55%;
   z-index: 3;
 }
 
+/* H1*/
 .frase-principal {
   margin-bottom: 20px;
   font-family: "Times New Roman", Times, serif;
@@ -447,11 +515,12 @@ h1 {
 .tarjeta {
   background: radial-gradient(circle, rgba(2, 0, 36, 0.543855042) 0%, rgba(43, 63, 143, 0.2133228291) 54%, rgba(0, 212, 255, 0) 100%);
   color: rgb(20, 20, 20);
-  font-size: x-large;
+  font-size: 25px;
   padding: 80px;
   margin-bottom: 30px;
 }
 
+/* SELECCION DE CANTIDAD DE DORMITORIOS*/
 .cantidad-dormitorios {
   text-align: center;
   padding-bottom: 10px;
@@ -496,12 +565,13 @@ h1 {
 .dorm-1-2-3 {
   display: flex;
   color: rgb(161, 41, 41);
-  font-size: larger;
+  font-size: 20px;
   padding-left: 12%;
   letter-spacing: 5px;
   margin-bottom: 25px;
 }
 
+/* DESARROLLOS - PROYECTOS COMERCIALIZADOS*/
 .desarrollos {
   background-color: rgb(161, 41, 41);
   width: 50%;
@@ -520,14 +590,26 @@ h1 {
   margin-bottom: 120px;
 }
 
+/* FOOTER*/
 .pie-pagina {
+  display: inline-block;
   background-color: rgb(161, 41, 41);
   color: white;
+  justify-content: space-between;
   text-align: center;
   border: solid 5px;
-  padding: 50px;
+  width: 100%;
+}
+.pie-pagina .menu-footer {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.pie-pagina .ul li a {
+  justify-content: flex-end;
 }
 
+/* FINALIZA BODY*/
 /*VARIABLES*/
 * {
   margin: 0;
@@ -567,35 +649,33 @@ h1 {
   justify-content: center;
 }
 
+/* BODY*/
 .cuerpo {
   display: grid;
-  width: 100%;
-  background-color: circle, rgba(2, 0, 36, 0.543855042) 0%, rgba(43, 63, 143, 0.2133228291) 54%, rgba(0, 212, 255, 0) 100%;
+  background: radial-gradient(circle, rgba(2, 0, 36, 0.543855042) 0%, rgba(43, 63, 143, 0.2133228291) 54%, rgba(0, 212, 255, 0) 100%);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
+  width: 100%;
+  /* HEADER*/
 }
 .cuerpo .encabezado {
   color: white;
   border: solid;
   padding: 5px;
   text-align: center;
-  width: auto;
+  width: 100%;
   height: auto;
+}
+@media only screen and (max-width: 420px) and (max-width: 1200px) {
+  .cuerpo .encabezado {
+    width: 100%;
+  }
 }
 .cuerpo .encabezado nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-@media only screen and (max-width: 420px) and (max-width: 1200px) {
-  .cuerpo .encabezado nav {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-  }
-  .cuerpo .encabezado nav .imagen-logo {
-    display: none;
-  }
+  width: 100%;
 }
 .cuerpo .encabezado nav .imagen-logo {
   display: flex;
@@ -624,8 +704,11 @@ h1 {
 }
 .cuerpo .encabezado nav .menu-navegable li a:hover {
   background-color: gray;
+  border-radius: 6px;
+  padding: 5px;
 }
 
+/* FRASE PRINCIPAL ALQUILAR*/
 .frase-principal {
   background-color: gray;
   margin: 10px;
@@ -641,14 +724,15 @@ h1 {
 .frase-principal .logo-Whatsapp {
   display: flex;
   position: fixed;
-  height: 3.5rem;
+  height: 5rem;
   width: auto;
-  left: 90%;
+  left: 93%;
   bottom: 0;
   top: 55%;
   z-index: 3;
 }
 
+/* SELECCIONAR CANTIDAD DE DORMITORIOS*/
 .cantidad-dormitorios {
   display: flex;
   justify-content: space-evenly;
@@ -705,19 +789,31 @@ h1 {
   display: flex;
   border: solid rgb(182, 175, 175);
   justify-content: center;
-  color: rgb(141, 22, 22);
+  color: rgb(161, 41, 41);
   margin-bottom: 20px;
   margin-top: 10px;
 }
 
+/* FOOTER*/
 .pie-pagina {
+  display: inline-block;
   background-color: rgb(161, 41, 41);
   color: white;
+  justify-content: space-between;
   text-align: center;
   border: solid 5px;
-  padding: 50px;
+  width: 100%;
+}
+.pie-pagina .menu-footer {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.pie-pagina .ul li a {
+  justify-content: flex-end;
 }
 
+/* FINALIZA BODY*/
 /* INDEX*/
 /*VARIABLES*/
 * {
@@ -758,11 +854,13 @@ h1 {
   justify-content: center;
 }
 
+/* BODY*/
 .cuerpo {
   display: grid;
   background-color: circle, rgba(2, 0, 36, 0.543855042) 0%, rgba(43, 63, 143, 0.2133228291) 54%, rgba(0, 212, 255, 0) 100%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
+  /*HEADER*/
 }
 .cuerpo .encabezado {
   background-color: rgb(161, 41, 41);
@@ -791,7 +889,7 @@ h1 {
   text-transform: uppercase;
   text-shadow: 3px 3px 3px black;
 }
-.cuerpo .encabezado .menu-navegable li a:hover {
+.cuerpo .encabezado .menu-navegable li a :hover {
   background-color: gray;
   border-radius: 6px;
   padding: 5px;
@@ -803,6 +901,7 @@ h1 {
   text-align: center;
   justify-content: center;
   margin: auto;
+  /* CAROUSEL - BOOTSTRAP*/
 }
 .contenido h1 {
   background-color: gray;
@@ -824,12 +923,11 @@ h1 {
 .contenido .logo-Whatsapp {
   display: flex;
   position: fixed;
-  height: 3.5rem;
+  height: 3, 5rem;
   width: auto;
   left: 93%;
   bottom: 0;
   top: 55%;
-  z-index: 3;
 }
 .contenido .departamentos-nuevos {
   display: flex;
@@ -855,6 +953,7 @@ h1 {
 }
 
 /* FINALIZA MAIN*/
+/* SECCION DESARROLLOS*/
 .desarrollos {
   background-color: rgb(161, 41, 41);
   width: 50%;
@@ -875,6 +974,7 @@ h1 {
   border: solid rgb(161, 41, 41);
 }
 
+/* COMENTARIOS DE LOS CLIENTES*/
 .parrafo-comentarios {
   text-decoration: underline;
   font-size: larger;
@@ -891,6 +991,7 @@ h1 {
   justify-content: space-evenly;
 }
 
+/* FOOTER*/
 .pie-pagina {
   display: inline-block;
   background-color: rgb(161, 41, 41);
@@ -908,5 +1009,7 @@ h1 {
 .pie-pagina .ul li a {
   justify-content: flex-end;
 }
+
+/* FINALIZA BODY*/
 
 /*# sourceMappingURL=style.css.map */

@@ -4,163 +4,216 @@
 @import "../base/extends";
 @import "../base/mixin";
 
+/* BODY*/
 
 .cuerpo {
-    display: grid;
-    background-color: $bg-color-cuerpo;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: grid;
+  background-color: $bg-color-cuerpo;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: $color-texto;
+
+  /* HEADER*/
+  .encabezado {
+    background-color: map-get($header, $bg-color-general);
     color: $color-texto;
+    border: solid;
+    padding: 5px;
+    text-align: $texto-alineado;
+    width: auto;
+    height: auto;
 
-    .encabezado {
-        background-color: $bg-color-general;
-        color: $color-texto;
-        border: solid;
-        text-align: $texto-alineado;
-        width: 100%;
-        height: auto;
-    }
 
-    .imagen-logo {
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @media only screen and (max-width: 420px) and (max-width: 1200px) {
         display: flex;
-        position: sticky;
+        width: 100%;
+        justify-content: space-around;
+
+        
+
+      }
+
+      .imagen-logo {
+        display: flex;
+        position: relative;
+        width: 95px;
+        height: 90px;
         border: solid 2px white;
-       
 
-    }
+        @media only screen and (max-width: 590px) and (max-width: 1200px) {
+          display: none;
+        }
 
-    .menu-navegable {
+
+      }
+
+      .menu-navegable {
         display: flex;
         list-style: none;
         justify-content: space-evenly;
-        text-align:$texto-alineado;
+        text-align: $texto-alineado;
         background-color: $bg-color-general;
-    }
+      }
 
-    .menu-navegable li a {
+      .menu-navegable li a {
         text-decoration: none;
         color: $color-texto;
         text-transform: uppercase;
         text-shadow: 2px 2px 2px black;
+      }
+
+      .menu-navegable li a:hover {
+        background-color: gray;
+      }
     }
 
-    .menu-navegable li a:hover {
-        background-color: gray;
-    }
+  }
+
 }
 
 .logo-Whatsapp {
-    display: flex;
-        position: fixed;
-        height: 3.5rem;
-        width: auto;
-        left: 95%;
-        bottom: 0;
-        top:55%;
-    
-        z-index: 3;
-
+  display: flex;
+  position: fixed;
+  height: 3.5rem;
+  width: auto;
+  left: 93%;
+  bottom: 0;
+  top: 55%;
+  z-index: 3;
 }
 
+/* H1*/
+
 .frase-principal {
-    @extend %flex;
-    margin-bottom: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
-    padding: 5px;
-    color: $color-texto;
-    background-color: gray;
-margin: 5px;
+  @extend %flex;
+  margin-bottom: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  padding: 5px;
+  color: $color-texto;
+  background-color: gray;
+  margin: 5px;
 }
 
 .tarjeta {
-    
-background: radial-gradient(circle, rgba(2, 0, 36, 0.5438550420168067) 0%, rgba(43, 63, 143, 0.21332282913165268) 54%, rgba(0, 212, 255, 0) 100%);
-color: rgb(20, 20, 20);
-@extend %flex;
-font-size: x-large;
-padding: 80px;
-margin-bottom: 30px;
+
+  background: radial-gradient(circle, rgba(2, 0, 36, 0.5438550420168067) 0%, rgba(43, 63, 143, 0.21332282913165268) 54%, rgba(0, 212, 255, 0) 100%);
+  color: rgb(20, 20, 20);
+  @extend %flex;
+  font-size: 25px;
+  padding: 80px;
+  margin-bottom: 30px;
 
 }
+
+/* SELECCION DE CANTIDAD DE DORMITORIOS*/
+
 .cantidad-dormitorios {
-    text-align: $texto-alineado;
-    padding-bottom: 10px;
+  text-align: $texto-alineado;
+  padding-bottom: 10px;
 
-  
+
 
 }
+
 .dorm-1 {
-    position: relative;
-    width: 10%;
-    height: auto;
-    left: 15%;
+  position: relative;
+  width: 10%;
+  height: auto;
+  left: 15%;
 }
-.dorm-2 {
-    position: relative;
-    width: 10%;
-    height: auto;
-    left: 26%;
-}
-.dorm-3 {
-    position: relative;
 
-    width: 10%;
-    height: auto;
-    left: 38%;
+.dorm-2 {
+  position: relative;
+  width: 10%;
+  height: auto;
+  left: 26%;
 }
+
+.dorm-3 {
+  position: relative;
+
+  width: 10%;
+  height: auto;
+  left: 38%;
+}
+
 .edificio-construccion {
-    position: relative;
-    width: 10%;
-    height: auto;
-    left: 48%;
+  position: relative;
+  width: 10%;
+  height: auto;
+  left: 48%;
 }
 
 .dormitorios-comprar {
-    display: flex;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
-    color: rgb(161, 41, 41);
-    justify-content: center;
+  display: flex;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  color: $bg-color-general;
+  justify-content: center;
 
 }
 
 
 .dorm-1-2-3 {
-    display: flex;
-    color: rgb(161, 41, 41);
-    font-size: larger;
-    padding-left: 12%;
-    letter-spacing: 5px;
-    margin-bottom: 25px;
+  display: flex;
+  color: $bg-color-general;
+  font-size: 20px;
+  padding-left: 12%;
+  letter-spacing: 5px;
+  margin-bottom: 25px;
 
 }
 
+/* DESARROLLOS - PROYECTOS COMERCIALIZADOS*/
+
+
 .desarrollos {
-    background-color: rgb(161, 41, 41);
-    width: 50%;
-    display: flex;
-    margin: auto;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    justify-content: center;
-    color: $color-texto;
-    border: solid rgb(161, 41, 41)
+  background-color: rgb(161, 41, 41);
+  width: 50%;
+  display: flex;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  justify-content: center;
+  color: $color-texto;
+  border: solid rgb(161, 41, 41)
 }
 
 .proyectos-comercializados {
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 120px;
-    
+  text-align: $texto-alineado;
+  margin-top: 100px;
+  margin-bottom: 120px;
+
 
 
 }
+
+/* FOOTER*/
 
 .pie-pagina {
-    background-color: $bg-color-general;
-    color: $color-texto;
-    text-align: center;
-    border: solid 5px;
-    padding: 50px;
+  display: inline-block;
+  background-color: $bg-color-general;
+  color: $color-texto;
+  justify-content: space-between;
+  text-align: $texto-alineado;
+  border: solid 5px;
+  width: 100%;
+
+  .menu-footer {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .ul li a {
+    justify-content: flex-end;
+  }
 
 }
+
+/* FINALIZA BODY*/

@@ -5,51 +5,82 @@
 @import "../base/mixin";
 
 
-/*VENDER*/
+/*BODY*/
 
 .cuerpo {
   display: grid;
   background-color: $bg-color-cuerpo;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: $color-texto;
+  width: 100%;
+
+  /* HEADER*/ 
 
   .encabezado {
-    background-color: $bg-color-general;
+    background-color: map-get($header, $bg-color-general);
     color: $color-texto;
     border: solid;
+    padding: 5px;
     text-align: $texto-alineado;
-    width: 100%;
+    width:100%;
     height: auto;
-  }
 
-  .imagen-logo {
-    display: flex;
-    position: sticky;
-    border: solid 2px white;
-   
-  }
 
-  .menu-navegable {
-    display: flex;
-    list-style: none;
-    justify-content: space-evenly;
-    text-align: $texto-alineado;
-    background-color: $bg-color-general;
-  }
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
 
-  .menu-navegable li a {
-    text-decoration: none;
-    color: $color-texto;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 2px black;
-  }
+      @media only screen and (max-width: 420px) and (max-width: 1200px) {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
 
-  .menu-navegable li a:hover {
-    background-color: gray;
+
+      }
+
+      .imagen-logo {
+        display: flex;
+        position: relative;
+        width: 95px;
+        height: 90px;
+        border: solid 2px white;
+
+        @media only screen and (max-width: 590px) and (max-width: 1200px) {
+          display: none;
+        }
+
+
+      }
+
+      .menu-navegable {
+        display: flex;
+        list-style: none;
+        justify-content: space-evenly;
+        text-align: center;
+        background-color: $bg-color-general;
+      }
+
+      .menu-navegable li a {
+        text-decoration: none;
+        color: $color-texto;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 2px black;
+      }
+
+      .menu-navegable li a:hover {
+        background-color: gray;
+      }
+    }
+
   }
 }
 
 /* CIERRO HEADER*/
+
+
+/* H1-VENDER*/ 
+
 .frase-principal-vender {
   font-size: 30px;
   text-align: $texto-alineado;
@@ -66,22 +97,23 @@
 
 .logo-Whatsapp {
   display: flex;
-        position: fixed;
-        height: 3.5rem;
-        width: auto;
-        left: 95%;
-        bottom: 0;
-        top:55%;
-        z-index: 3;
+  position: fixed;
+  height: 3.5rem;
+  width: auto;
+  left: 93%;
+  bottom: 0;
+  z-index: 2;
 
 }
+
+/* FORMULARIO - BOOTSTRAP*/ 
 
 .formulario {
 
   color: $color-texto;
-  font-size: large;
+  font-size: 20px;
   text-align: center;
-  background-color: rgb(163, 41, 41);
+  background-color: $bg-color-general
 }
 
 .formulario-completar {
@@ -91,11 +123,27 @@
   padding: 50px;
 }
 
+/* FOOTER*/
+
 .pie-pagina {
+  display: inline-block;
   background-color: $bg-color-general;
   color: $color-texto;
+  justify-content: space-between;
   text-align: $texto-alineado;
   border: solid 5px;
-  padding: 50px;
+  width: 100%;
+
+  .menu-footer {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .ul li a {
+      justify-content: flex-end;
+  }
 
 }
+
+/* FINALIZA BODY*/
